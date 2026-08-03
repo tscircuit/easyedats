@@ -48,12 +48,10 @@ mutation it emits deterministic two-space JSON while retaining unknown data.
 
 ## API shape
 
-- `parseEasyEdaSource(source)` selects a schematic, schematic-symbol, PCB,
-  PCB-footprint, or generic document root based on the `head` document type.
+- `parseEasyEdaSource(source)` returns `EasyEdaSchematic`, `EasyEdaPcb`, or a
+  generic `EasyEdaDocument` based on the `head` document type.
 - `parseEasyEdaSchematic(source)` and `parseEasyEdaPcb(source)` validate the
   expected root type.
-- `parseEasyEdaSchematicSymbol(source)` and
-  `parseEasyEdaPcbFootprint(source)` cover Standard library documents.
 - `EasyEdaDocument#getChildren()` exposes the head, canvas, layers, and shapes
   for generic tree walking.
 - Registered shape classes expose typed accessors for common fields.

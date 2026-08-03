@@ -1,0 +1,27 @@
+{
+  "name": "easyedats",
+  "version": "0.0.1",
+  "description": "TypeScript-first parser and serializer for EasyEDA source files",
+  "module": "lib/index.ts",
+  "type": "module",
+  "files": ["lib"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tscircuit/easyedats"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "bunx tsc --noEmit",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.6",
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
