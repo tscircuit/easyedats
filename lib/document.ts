@@ -10,7 +10,12 @@ export type EasyEdaJsonValue =
   | EasyEdaJsonValue[]
   | { [key: string]: EasyEdaJsonValue }
 
-export type EasyEdaDocumentKind = "schematic" | "pcb" | "unknown"
+export type EasyEdaDocumentKind =
+  | "schematic"
+  | "schematic-symbol"
+  | "pcb"
+  | "pcb-footprint"
+  | "unknown"
 
 export interface EasyEdaDocumentInit {
   head: EasyEdaHead | string
@@ -38,6 +43,7 @@ export class EasyEdaDocument extends EasyEdaNode {
   private readonly originalSource?: string
   private readonly initialFingerprint: string
   private readonly includeLayers: boolean
+  private readonly includeShapes: boolean
   private readonly propertyOrder: string[]
 
   constructor(kind: EasyEdaDocumentKind, init: EasyEdaDocumentInit) {
@@ -50,6 +56,7 @@ export class EasyEdaDocument extends EasyEdaNode {
         ? new EasyEdaCanvas(init.canvas)
         : init.canvas
     this.shapes = [...(init.shapes ?? [])]
+    this.includeShapes = init.shapes !== undefined
     this.layers = (init.layers ?? []).map((layer) =>
       typeof layer === "string" ? new EasyEdaLayer(layer) : layer,
     )
@@ -111,6 +118,7 @@ export class EasyEdaDocument extends EasyEdaNode {
       if (key === "head") return this.head.getString()
       if (key === "canvas") return this.canvas?.getString()
       if (key === "shape") {
+        if (!this.includeShapes && this.shapes.length === 0) return undefined
         return this.shapes.map((shape) => shape.getString())
       }
       if (key === "layers") {
@@ -163,5 +171,17 @@ export class EasyEdaSchematic extends EasyEdaDocument {
 export class EasyEdaPcb extends EasyEdaDocument {
   constructor(init: EasyEdaDocumentInit) {
     super("pcb", init)
+  }
+}
+
+export class EasyEdaSchematicSymbol extends EasyEdaDocument {
+  constructor(init: EasyEdaDocumentInit) {
+    super("schematic-symbol", init)
+  }
+}
+
+export class EasyEdaPcbFootprint extends EasyEdaDocument {
+  constructor(init: EasyEdaDocumentInit) {
+    super("pcb-footprint", init)
   }
 }

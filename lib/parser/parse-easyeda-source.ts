@@ -5,7 +5,9 @@ import {
   type EasyEdaDocumentInit,
   type EasyEdaJsonValue,
   EasyEdaPcb,
+  EasyEdaPcbFootprint,
   EasyEdaSchematic,
+  EasyEdaSchematicSymbol,
 } from "../document"
 import { EasyEdaShape } from "../entities/shape"
 import { EasyEdaHead } from "../head"
@@ -63,7 +65,10 @@ export function parseEasyEdaSource(source: string): EasyEdaDocument {
     head,
     canvas:
       canvasSource !== undefined ? new EasyEdaCanvas(canvasSource) : undefined,
-    shapes: shapeSources.map((shape) => EasyEdaShape.parse(shape)),
+    shapes:
+      parsed.shape === undefined
+        ? undefined
+        : shapeSources.map((shape) => EasyEdaShape.parse(shape)),
     layers:
       parsed.layers === undefined
         ? undefined
@@ -75,6 +80,8 @@ export function parseEasyEdaSource(source: string): EasyEdaDocument {
 
   if (head.documentTypeCode === 1) return new EasyEdaSchematic(init)
   if (head.documentTypeCode === 3) return new EasyEdaPcb(init)
+  if (head.documentTypeCode === 4) return new EasyEdaPcbFootprint(init)
+  if (head.documentTypeCode === 7) return new EasyEdaSchematicSymbol(init)
   return new EasyEdaDocument("unknown", init)
 }
 
@@ -93,6 +100,28 @@ export function parseEasyEdaPcb(source: string): EasyEdaPcb {
   if (!(document instanceof EasyEdaPcb)) {
     throw new Error(
       `Expected EasyEDA PCB document type 3, got ${document.documentTypeCode ?? "unknown"}`,
+    )
+  }
+  return document
+}
+
+export function parseEasyEdaSchematicSymbol(
+  source: string,
+): EasyEdaSchematicSymbol {
+  const document = parseEasyEdaSource(source)
+  if (!(document instanceof EasyEdaSchematicSymbol)) {
+    throw new Error(
+      `Expected EasyEDA schematic symbol document type 7, got ${document.documentTypeCode ?? "unknown"}`,
+    )
+  }
+  return document
+}
+
+export function parseEasyEdaPcbFootprint(source: string): EasyEdaPcbFootprint {
+  const document = parseEasyEdaSource(source)
+  if (!(document instanceof EasyEdaPcbFootprint)) {
+    throw new Error(
+      `Expected EasyEDA PCB footprint document type 4, got ${document.documentTypeCode ?? "unknown"}`,
     )
   }
   return document

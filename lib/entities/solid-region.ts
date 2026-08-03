@@ -1,4 +1,9 @@
-import { shapeId } from "./field-helpers"
+import {
+  type EasyEdaPoint,
+  parsePoints,
+  serializePoints,
+  shapeId,
+} from "./field-helpers"
 import { EasyEdaShape, type EasyEdaShapeInit } from "./shape"
 
 export class EasyEdaSolidRegion extends EasyEdaShape {
@@ -20,12 +25,20 @@ export class EasyEdaSolidRegion extends EasyEdaShape {
     return this.getField(1)
   }
 
-  get path(): string | undefined {
-    return this.getField(2)
+  get points(): EasyEdaPoint[] {
+    return parsePoints(this.getField(2))
   }
 
-  set path(value: string | undefined) {
-    this.setField(2, value)
+  set points(value: readonly EasyEdaPoint[]) {
+    this.setField(2, serializePoints(value))
+  }
+
+  get fillStyle(): string | undefined {
+    return this.getField(3)
+  }
+
+  set fillStyle(value: string | undefined) {
+    this.setField(3, value)
   }
 
   get id(): string | undefined {

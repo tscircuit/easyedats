@@ -17,8 +17,12 @@ export class EasyEdaCopperArea extends EasyEdaShape {
     )
   }
 
-  get strokeWidth(): number | undefined {
-    return this.getNumberField(0)
+  get strokeWidth(): string | undefined {
+    return this.getField(0)
+  }
+
+  set strokeWidth(value: string | number | undefined) {
+    this.setField(0, value)
   }
 
   get layerId(): number | undefined {

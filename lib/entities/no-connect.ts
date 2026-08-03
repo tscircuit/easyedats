@@ -1,30 +1,30 @@
 import { shapeId } from "./field-helpers"
 import { EasyEdaShape, type EasyEdaShapeInit } from "./shape"
 
-export class EasyEdaDimension extends EasyEdaShape {
-  static readonly token = "DIMENSION"
+export class EasyEdaNoConnect extends EasyEdaShape {
+  static readonly token = "O"
 
   constructor(init: EasyEdaShapeInit = {}) {
     super(
       init.source === undefined
-        ? { ...init, token: EasyEdaDimension.token }
+        ? { ...init, token: EasyEdaNoConnect.token }
         : init,
     )
   }
 
-  get layerId(): number | undefined {
+  get x(): number | undefined {
     return this.getNumberField(0)
   }
 
-  set layerId(value: number | undefined) {
+  set x(value: number | undefined) {
     this.setField(0, value)
   }
 
-  get path(): string | undefined {
-    return this.getField(1)
+  get y(): number | undefined {
+    return this.getNumberField(1)
   }
 
-  set path(value: string | undefined) {
+  set y(value: number | undefined) {
     this.setField(1, value)
   }
 
@@ -33,4 +33,4 @@ export class EasyEdaDimension extends EasyEdaShape {
   }
 }
 
-EasyEdaShape.register(EasyEdaDimension)
+EasyEdaShape.register(EasyEdaNoConnect)
