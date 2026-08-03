@@ -6,7 +6,13 @@
     "indentStyle": "space"
   },
   "files": {
-    "includes": ["**", "!**/dist", "!**/package.json", "!tests/fixtures"]
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/package.json",
+      "!references",
+      "!tests/fixtures"
+    ]
   },
   "javascript": {
     "formatter": {

@@ -1,7 +1,7 @@
 {
   "name": "easyedats",
   "version": "0.0.1",
-  "description": "TypeScript-first parser and serializer for EasyEDA source files",
+  "description": "TypeScript-first parser, serializer, and SVG renderer for EasyEDA source files",
   "module": "lib/index.ts",
   "type": "module",
   "files": ["lib"],
@@ -10,7 +10,9 @@
     "url": "https://github.com/tscircuit/easyedats"
   },
   "scripts": {
+    "download-references": "bun run scripts/download-references.ts",
     "test": "bun test",
+    "test:update-svg": "BUN_UPDATE_SNAPSHOTS=1 bun test tests/svg",
     "typecheck": "bunx tsc --noEmit",
     "format": "biome format --write .",
     "format:check": "biome format .",
@@ -19,7 +21,12 @@
   "devDependencies": {
     "@biomejs/biome": "^2.5.6",
     "@types/bun": "latest",
+    "bun-match-svg": "^0.0.15",
+    "sharp": "^0.35.3",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "sharp": "^0.35.3"
   },
   "peerDependencies": {
     "typescript": "^5"
