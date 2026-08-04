@@ -82,11 +82,17 @@ copied into the output.
   `serializeEasyEdaToSvg` alias render parsed geometry.
 - `EasyEdaDocument#getChildren()` exposes the head, canvas, layers, and shapes
   for generic tree walking.
+- Documents provide `append*`, `insert*`, `remove*`, and `move*` methods for
+  shapes and layers; schematic lists provide the corresponding sheet methods.
 - Registered shape classes expose typed accessors for common fields.
 - `EasyEdaSvgNode#svgData` exposes the JSON tree stored by `SVGNODE` records.
 - `EasyEdaUnknownShape` preserves unrecognized commands verbatim.
 - Embedded `LIB` records expose their nested shapes through
-  `EasyEdaLibrary#getChildren()`.
+  `EasyEdaLibrary#getChildren()` and provide matching child mutation methods.
+
+Collection insertions accept indexes from zero through the current length.
+Removal and movement require an existing index, and move destinations describe
+the final position of the item.
 
 ## Development
 

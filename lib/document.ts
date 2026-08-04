@@ -1,5 +1,6 @@
 import { EasyEdaNode } from "./base-node"
 import { EasyEdaCanvas } from "./canvas"
+import { insertAt, moveWithin, removeAt } from "./collection-mutations"
 import type { EasyEdaShape } from "./entities/shape"
 import { EasyEdaHead } from "./head"
 import { EasyEdaLayer } from "./layer"
@@ -83,6 +84,39 @@ export class EasyEdaDocument extends EasyEdaNode {
       ...this.layers,
       ...this.shapes,
     ]
+  }
+
+  appendShape<T extends EasyEdaShape>(shape: T): T {
+    return this.insertShape(this.shapes.length, shape)
+  }
+
+  insertShape<T extends EasyEdaShape>(index: number, shape: T): T {
+    return insertAt(this.shapes, index, shape, "shapes")
+  }
+
+  removeShape(index: number): EasyEdaShape {
+    return removeAt(this.shapes, index, "shapes")
+  }
+
+  moveShape(fromIndex: number, toIndex: number): void {
+    moveWithin(this.shapes, fromIndex, toIndex, "shapes")
+  }
+
+  appendLayer(layer: EasyEdaLayer | string): EasyEdaLayer {
+    return this.insertLayer(this.layers.length, layer)
+  }
+
+  insertLayer(index: number, layer: EasyEdaLayer | string): EasyEdaLayer {
+    const parsed = typeof layer === "string" ? new EasyEdaLayer(layer) : layer
+    return insertAt(this.layers, index, parsed, "layers")
+  }
+
+  removeLayer(index: number): EasyEdaLayer {
+    return removeAt(this.layers, index, "layers")
+  }
+
+  moveLayer(fromIndex: number, toIndex: number): void {
+    moveWithin(this.layers, fromIndex, toIndex, "layers")
   }
 
   getProperty<T extends EasyEdaJsonValue = EasyEdaJsonValue>(
@@ -282,6 +316,49 @@ export class EasyEdaSchematicList extends EasyEdaDocument {
 
   get sheets(): EasyEdaSchematic[] {
     return this.schematics.map((entry) => entry.document)
+  }
+
+  appendSheet(sheet: EasyEdaSchematicListEntry): EasyEdaSchematicListEntry
+  appendSheet(
+    sheet: EasyEdaSchematic,
+    init?: Omit<EasyEdaSchematicListEntryInit, "document">,
+  ): EasyEdaSchematicListEntry
+  appendSheet(
+    sheet: EasyEdaSchematic | EasyEdaSchematicListEntry,
+    init: Omit<EasyEdaSchematicListEntryInit, "document"> = {},
+  ): EasyEdaSchematicListEntry {
+    return sheet instanceof EasyEdaSchematicListEntry
+      ? this.insertSheet(this.schematics.length, sheet)
+      : this.insertSheet(this.schematics.length, sheet, init)
+  }
+
+  insertSheet(
+    index: number,
+    sheet: EasyEdaSchematicListEntry,
+  ): EasyEdaSchematicListEntry
+  insertSheet(
+    index: number,
+    sheet: EasyEdaSchematic,
+    init?: Omit<EasyEdaSchematicListEntryInit, "document">,
+  ): EasyEdaSchematicListEntry
+  insertSheet(
+    index: number,
+    sheet: EasyEdaSchematic | EasyEdaSchematicListEntry,
+    init: Omit<EasyEdaSchematicListEntryInit, "document"> = {},
+  ): EasyEdaSchematicListEntry {
+    const entry =
+      sheet instanceof EasyEdaSchematicListEntry
+        ? sheet
+        : new EasyEdaSchematicListEntry({ ...init, document: sheet })
+    return insertAt(this.schematics, index, entry, "schematic sheets")
+  }
+
+  removeSheet(index: number): EasyEdaSchematicListEntry {
+    return removeAt(this.schematics, index, "schematic sheets")
+  }
+
+  moveSheet(fromIndex: number, toIndex: number): void {
+    moveWithin(this.schematics, fromIndex, toIndex, "schematic sheets")
   }
 
   override getChildren(): EasyEdaNode[] {
