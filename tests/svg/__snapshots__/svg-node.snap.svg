@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="-5 -5 110 110" role="img" aria-label="SVG node artwork" class="easyeda-document easyeda-pcb" data-renderer="easyedats">
+<title>SVG node artwork</title>
+<rect class="easyeda-background" x="-5" y="-5" width="110" height="110" fill="#000000"/>
+<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">
+<path data-easyeda-shape="SVGNODE" data-easyeda-id="gge-visible" data-easyeda-node="path" data-layer="3" d="M 10 10 L 90 10 L 50 80 Z" id="gge-visible" stroke="none" fill="#FFCC00"/>
+<g data-easyeda-shape="SVGNODE" data-easyeda-id="gge-group" data-easyeda-node="g" data-layer="3" id="gge-group"><path data-easyeda-node="path" data-layer="3" d="M 20 20 L 80 20" stroke="#00FF00"/><text data-easyeda-node="text" data-layer="3" x="25" y="40" fill="#FFCC00">Safe &lt;artwork&gt; &amp; text</text></g>
+</g>
+</svg>

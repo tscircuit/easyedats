@@ -2,6 +2,7 @@ import { expect, test } from "bun:test"
 import {
   EasyEdaPcbText,
   EasyEdaShape,
+  EasyEdaSvgNode,
   EasyEdaUnknownShape,
   EasyEdaVia,
   parseEasyEdaPcbFootprint,
@@ -41,6 +42,7 @@ const documentedShapeSamples = [
   "VIA~0~0~3.2~GND~0.8~gge31",
   "HOLE~0~0~4~gge32",
   "DIMENSION~3~M0 0 L10 10~gge33",
+  'SVGNODE~{"gId":"gge34","nodeName":"path","nodeType":1,"layerid":"3","attrs":{"d":"M0 0 L10 10","stroke":"none","id":"gge34"}}',
 ] as const
 
 test("registers every documented Standard source shape command", () => {
@@ -75,6 +77,25 @@ test("provides typed accessors for PCB text", () => {
   expect(text.rotation).toBe(90)
   expect(text.layerId).toBe(4)
   expect(text.fontSize).toBe(3.937)
+})
+
+test("parses and mutates JSON-backed SVG nodes losslessly", () => {
+  const source =
+    'SVGNODE~{"gId":"gge5","nodeName":"path","nodeType":1,"layerid":"3","attrs":{"d":"M0 0 L10 10","title":"value~with~tildes"}}'
+  const shape = EasyEdaShape.parse(source)
+  expect(shape).toBeInstanceOf(EasyEdaSvgNode)
+  if (!(shape instanceof EasyEdaSvgNode)) throw new Error("Expected SVG node")
+
+  expect(shape.getString()).toBe(source)
+  expect(shape.id).toBe("gge5")
+  expect(shape.layerId).toBe(3)
+  expect(shape.svgData?.attrs?.title).toBe("value~with~tildes")
+
+  shape.svgData = { ...shape.svgData, layerid: "4" }
+  expect(shape.layerId).toBe(4)
+  expect(JSON.parse(shape.getString().slice("SVGNODE~".length))).toEqual(
+    shape.svgData,
+  )
 })
 
 test("selects Standard symbol and footprint root classes", () => {

@@ -1,4 +1,5 @@
 import type { EasyEdaNode } from "../base-node"
+import { insertAt, moveWithin, removeAt } from "../collection-mutations"
 import { EasyEdaShape, type EasyEdaShapeInit } from "./shape"
 
 export interface EasyEdaLibraryInit extends EasyEdaShapeInit {
@@ -25,6 +26,22 @@ export class EasyEdaLibrary extends EasyEdaShape {
 
   override getChildren(): EasyEdaNode[] {
     return [...this.children]
+  }
+
+  appendChild<T extends EasyEdaShape>(child: T): T {
+    return this.insertChild(this.children.length, child)
+  }
+
+  insertChild<T extends EasyEdaShape>(index: number, child: T): T {
+    return insertAt(this.children, index, child, "LIB children")
+  }
+
+  removeChild(index: number): EasyEdaShape {
+    return removeAt(this.children, index, "LIB children")
+  }
+
+  moveChild(fromIndex: number, toIndex: number): void {
+    moveWithin(this.children, fromIndex, toIndex, "LIB children")
   }
 
   override getString(): string {
