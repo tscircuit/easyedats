@@ -16,9 +16,9 @@ items are additional support we still need.
 - [x] Model custom-attribute `` ` `` key/value sections with lossless editing.
 - [x] Add first-class insert, remove, and reorder APIs for shapes, layers, sheets,
   and `LIB` children.
-- [ ] Add structured parse errors with document paths, record tokens, and field
+- [x] Add structured parse errors with document paths, record tokens, and field
   positions.
-- [ ] Define safe limits and useful errors for malformed JSON, truncated records,
+- [x] Define safe limits and useful errors for malformed JSON, truncated records,
   excessive nesting, and unexpectedly large inputs.
 - [ ] Cover Standard project archives and standalone library export containers.
 
@@ -38,21 +38,21 @@ items are additional support we still need.
   plated/non-plated slots, and all solid-region subtypes.
 - [ ] Match text anchors, rotation, mirroring, line spacing, font fallback, and
   hidden-text behavior.
-- [ ] Render embedded images safely, including data URLs and remote-image policy.
+- [x] Render embedded images safely, including data URLs and remote-image policy.
 - [ ] Complete dimension arrows, path commands, fill rules, and curve bounds.
 - [ ] Calculate geometry-based bounds without relying on the EasyEDA `BBox` or
   unrelated numeric metadata.
-- [ ] Add optional net highlighting and component/footprint selection metadata.
+- [x] Add optional net highlighting and component/footprint selection metadata.
 
 ## P1: Typed model and semantics
 
-- [ ] Audit every documented Standard shape token against a typed entity and a
+- [x] Audit every documented Standard shape token against a typed entity and a
   focused parse/mutate/serialize fixture.
 - [ ] Expose typed layer IDs, net names, pad numbers, component attributes, and
   design-rule fields instead of raw string indexes where practical.
 - [ ] Build a connectivity graph for schematic nets and PCB copper.
 - [ ] Link schematic components and pins to PCB footprints and pads.
-- [ ] Report unsupported tokens and partially rendered features without making
+- [x] Report unsupported tokens and partially rendered features without making
   lossless round trips fail.
 - [ ] Add optional conversion to and from Circuit JSON after format fidelity is
   stable.
@@ -66,9 +66,9 @@ items are additional support we still need.
 - [ ] Add real-world symbol, footprint, multi-sheet, non-English, image-bearing,
   and four-or-more-layer board fixtures.
 - [ ] Add mutation snapshots for each entity rather than round-trip-only coverage.
-- [ ] Add property-based tests for delimiter-heavy values and randomized unknown
+- [x] Add property-based tests for delimiter-heavy values and randomized unknown
   fields.
-- [ ] Add fuzzing for parser crashes and serializer data loss.
+- [x] Add fuzzing for parser crashes and serializer data loss.
 - [ ] Establish parse, serialize, and SVG-render performance/memory budgets for
   1 MB, 10 MB, and pathological files.
 
@@ -78,7 +78,7 @@ items are additional support we still need.
   and archive formats; do not silently interpret Pro data as Standard.
 - [ ] Support EasyEDA API/export envelopes such as raw component-response wrappers
   where useful, while keeping the core parser independent of network access.
-- [ ] Provide a CLI for inspect, validate, normalize, round-trip, and SVG rendering.
-- [ ] Verify the package in Bun, Node.js ESM, and browser bundlers.
+- [x] Provide a CLI for inspect, validate, normalize, round-trip, and SVG rendering.
+- [x] Verify the package in Bun, Node.js ESM, and browser bundlers.
 - [ ] Add package build/export validation, generated API docs, changelog, and a
   release workflow before the first npm publication.

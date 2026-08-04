@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="261.818182" viewBox="-5 -5 110 90" role="img" aria-label="Safe embedded images" class="easyeda-document easyeda-schematic" data-renderer="easyedats">
+<title>Safe embedded images</title>
+<rect class="easyeda-background" x="-5" y="-5" width="110" height="90" fill="#ffffff"/>
+<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">
+<image data-easyeda-shape="I" data-easyeda-id="gge-image-data" x="10" y="15" width="40" height="20" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=" preserveAspectRatio="none" transform="rotate(10 30 25)"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge-pin">
+</g>
+</g>
+</svg>

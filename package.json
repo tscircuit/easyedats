@@ -2,6 +2,9 @@
   "name": "easyedats",
   "version": "0.0.1",
   "description": "TypeScript-first parser, serializer, and SVG renderer for EasyEDA source files",
+  "bin": {
+    "easyedats": "./lib/cli.ts"
+  },
   "module": "lib/index.ts",
   "type": "module",
   "files": ["lib"],
@@ -11,6 +14,7 @@
   },
   "scripts": {
     "download-references": "bun run scripts/download-references.ts",
+    "easyedats": "bun run lib/cli.ts",
     "test": "bun test",
     "test:update-svg": "BUN_UPDATE_SNAPSHOTS=1 bun test tests/svg",
     "typecheck": "bunx tsc --noEmit",
