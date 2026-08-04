@@ -6,6 +6,7 @@ import {
 import type { EasyEdaPoint } from "../entities/field-helpers"
 import { EasyEdaLibrary } from "../entities/library"
 import type { EasyEdaShape } from "../entities/shape"
+import { EasyEdaSvgNode, type EasyEdaSvgNodeData } from "../entities/svg-node"
 
 export interface EasyEdaSvgOptions {
   backgroundColor?: string
@@ -39,6 +40,76 @@ const DEFAULT_PCB_LAYER_COLORS = new Map<number, string>([
   [10, "#ff4dff"],
   [11, "#c0c0c0"],
   [12, "#ffffff"],
+])
+
+const SAFE_SVG_NODE_NAMES = new Set([
+  "circle",
+  "ellipse",
+  "g",
+  "line",
+  "path",
+  "polygon",
+  "polyline",
+  "rect",
+  "text",
+  "tspan",
+])
+
+const SAFE_SVG_NODE_ATTRIBUTES = new Map<string, string>([
+  ["class", "class"],
+  ["cx", "cx"],
+  ["cy", "cy"],
+  ["d", "d"],
+  ["dominant-baseline", "dominant-baseline"],
+  ["dominantBaseline", "dominant-baseline"],
+  ["fill", "fill"],
+  ["fill-opacity", "fill-opacity"],
+  ["fill-rule", "fill-rule"],
+  ["fillOpacity", "fill-opacity"],
+  ["fillRule", "fill-rule"],
+  ["font-family", "font-family"],
+  ["font-size", "font-size"],
+  ["font-style", "font-style"],
+  ["font-weight", "font-weight"],
+  ["fontFamily", "font-family"],
+  ["fontSize", "font-size"],
+  ["fontStyle", "font-style"],
+  ["fontWeight", "font-weight"],
+  ["height", "height"],
+  ["id", "id"],
+  ["opacity", "opacity"],
+  ["pathLength", "pathLength"],
+  ["points", "points"],
+  ["r", "r"],
+  ["rx", "rx"],
+  ["ry", "ry"],
+  ["stroke", "stroke"],
+  ["stroke-dasharray", "stroke-dasharray"],
+  ["stroke-dashoffset", "stroke-dashoffset"],
+  ["stroke-linecap", "stroke-linecap"],
+  ["stroke-linejoin", "stroke-linejoin"],
+  ["stroke-miterlimit", "stroke-miterlimit"],
+  ["stroke-opacity", "stroke-opacity"],
+  ["stroke-width", "stroke-width"],
+  ["strokeDasharray", "stroke-dasharray"],
+  ["strokeDashoffset", "stroke-dashoffset"],
+  ["strokeLinecap", "stroke-linecap"],
+  ["strokeLinejoin", "stroke-linejoin"],
+  ["strokeMiterlimit", "stroke-miterlimit"],
+  ["strokeOpacity", "stroke-opacity"],
+  ["strokeWidth", "stroke-width"],
+  ["text-anchor", "text-anchor"],
+  ["textAnchor", "text-anchor"],
+  ["transform", "transform"],
+  ["vector-effect", "vector-effect"],
+  ["vectorEffect", "vector-effect"],
+  ["width", "width"],
+  ["x", "x"],
+  ["x1", "x1"],
+  ["x2", "x2"],
+  ["y", "y"],
+  ["y1", "y1"],
+  ["y2", "y2"],
 ])
 
 function escapeXml(value: string): string {
@@ -133,6 +204,106 @@ function isLayerVisible(
     layerId === undefined ||
     !context.hiddenLayers.has(layerId)
   )
+}
+
+function svgNodeLayerId(value: unknown): number | undefined {
+  return typeof value === "string" || typeof value === "number"
+    ? number(value)
+    : undefined
+}
+
+function isSafeSvgNodeAttributeValue(value: string): boolean {
+  return !/url\s*\(|javascript\s*:|data\s*:/i.test(value)
+}
+
+function renderSvgNodeData(
+  value: unknown,
+  context: RenderContext,
+  inheritedLayerId: number | undefined,
+  rootAttributes = "",
+  depth = 0,
+): string | undefined {
+  if (!value || typeof value !== "object" || Array.isArray(value) || depth > 64)
+    return undefined
+  const node = value as EasyEdaSvgNodeData
+  if (
+    typeof node.nodeName !== "string" ||
+    !SAFE_SVG_NODE_NAMES.has(node.nodeName) ||
+    (node.nodeType !== undefined && node.nodeType !== 1)
+  ) {
+    return undefined
+  }
+
+  const sourceAttributes =
+    node.attrs && typeof node.attrs === "object" && !Array.isArray(node.attrs)
+      ? node.attrs
+      : {}
+  const layerId =
+    svgNodeLayerId(node.layerid) ??
+    svgNodeLayerId(sourceAttributes.layerid) ??
+    inheritedLayerId
+  if (!isLayerVisible(context, layerId)) return undefined
+
+  const attributes: string[] = []
+  const emittedAttributes = new Map<string, string>()
+  for (const [sourceName, sourceValue] of Object.entries(sourceAttributes)) {
+    const attributeName = SAFE_SVG_NODE_ATTRIBUTES.get(sourceName)
+    if (
+      !attributeName ||
+      (typeof sourceValue !== "string" &&
+        typeof sourceValue !== "number" &&
+        typeof sourceValue !== "boolean")
+    ) {
+      continue
+    }
+    const value = String(sourceValue)
+    if (!isSafeSvgNodeAttributeValue(value)) continue
+    emittedAttributes.set(attributeName, value)
+  }
+
+  const fillValue = emittedAttributes.get("fill")
+  const strokeValue = emittedAttributes.get("stroke")
+  const defaultColor = layerColor(context, layerId)
+  if (
+    (node.nodeName === "line" || node.nodeName === "polyline") &&
+    strokeValue === undefined
+  ) {
+    emittedAttributes.set("stroke", defaultColor)
+    if (fillValue === undefined) emittedAttributes.set("fill", "none")
+  } else if (fillValue === "none" && strokeValue === undefined) {
+    emittedAttributes.set("stroke", defaultColor)
+  } else if (
+    fillValue === undefined &&
+    (strokeValue === undefined || strokeValue === "none") &&
+    node.nodeName !== "g"
+  ) {
+    emittedAttributes.set("fill", defaultColor)
+  }
+
+  if (rootAttributes) attributes.push(rootAttributes)
+  attributes.push(`data-easyeda-node="${escapeXml(node.nodeName)}"`)
+  if (layerId !== undefined) {
+    attributes.push(`data-layer="${formatNumber(layerId)}"`)
+  }
+  for (const [name, value] of emittedAttributes) {
+    attributes.push(`${name}="${escapeXml(value)}"`)
+  }
+
+  const children = Array.isArray(node.childNodes)
+    ? node.childNodes
+        .map((child) =>
+          renderSvgNodeData(child, context, layerId, "", depth + 1),
+        )
+        .filter((child): child is string => child !== undefined)
+    : []
+  const text =
+    (node.nodeName === "text" || node.nodeName === "tspan") &&
+    typeof node.textContent === "string"
+      ? escapeXml(node.textContent)
+      : ""
+  const content = `${text}${children.join("")}`
+  const startTag = `<${node.nodeName} ${attributes.join(" ")}`
+  return content ? `${startTag}>${content}</${node.nodeName}>` : `${startTag}/>`
 }
 
 function pathOrPolygon(
@@ -517,6 +688,17 @@ function renderPcbShape(shape: EasyEdaShape, context: RenderContext): string[] {
 }
 
 function renderShape(shape: EasyEdaShape, context: RenderContext): string[] {
+  if (shape instanceof EasyEdaSvgNode) {
+    const data = shape.svgData
+    if (!data) return []
+    const rendered = renderSvgNodeData(
+      data,
+      context,
+      shape.layerId,
+      shapeAttributes(shape),
+    )
+    return rendered ? [rendered] : []
+  }
   return context.document.kind === "pcb" ||
     context.document.kind === "pcb-footprint"
     ? renderPcbShape(shape, context)

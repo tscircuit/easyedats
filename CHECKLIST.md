@@ -28,7 +28,8 @@ items are additional support we still need.
 - [x] Render common PCB tracks, arcs, pads, vias, holes, regions, pours, and text.
 - [x] Select a sheet when rendering a multi-sheet schematic list.
 - [x] Keep deterministic SVG baselines for canonical and real-world inputs.
-- [ ] Render `SVGNODE` content used for imported vector graphics and board artwork.
+- [x] Render `SVGNODE` content used for imported vector graphics and board artwork
+  with a safe SVG element and attribute allowlist.
 - [ ] Apply every symbol and footprint rotation, mirror, origin, and layer-side
   transform exactly as EasyEDA does.
 - [ ] Match EasyEDA layer order, visibility, colors, and front/back mirroring; add

@@ -12,5 +12,6 @@ test("renders the Open_Core0 v2.0 PCB stress fixture", async () => {
   expect(svg).toContain('data-easyeda-shape="COPPERAREA"')
   expect(svg).toContain('data-easyeda-shape="SOLIDREGION"')
   expect(svg).toContain('data-easyeda-shape="LIB"')
+  expect(svg).toContain('data-easyeda-shape="SVGNODE"')
   await expect(svg).toMatchSvgSnapshot(import.meta.path)
 })

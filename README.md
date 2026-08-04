@@ -63,7 +63,10 @@ const svg = renderEasyEdaSvg(document, {
 
 `renderEasyEdaSvg()` produces deterministic, standalone SVG for schematics,
 PCB layouts, symbols, and footprints. For a schematic list it renders the
-first sheet by default; pass `schematicIndex` to select another sheet.
+first sheet by default; pass `schematicIndex` to select another sheet. Imported
+`SVGNODE` artwork is rendered through an explicit element and attribute
+allowlist; scripts, event handlers, inline styles, and URL references are not
+copied into the output.
 
 ## API shape
 
@@ -80,6 +83,7 @@ first sheet by default; pass `schematicIndex` to select another sheet.
 - `EasyEdaDocument#getChildren()` exposes the head, canvas, layers, and shapes
   for generic tree walking.
 - Registered shape classes expose typed accessors for common fields.
+- `EasyEdaSvgNode#svgData` exposes the JSON tree stored by `SVGNODE` records.
 - `EasyEdaUnknownShape` preserves unrecognized commands verbatim.
 - Embedded `LIB` records expose their nested shapes through
   `EasyEdaLibrary#getChildren()`.
