@@ -13,7 +13,7 @@ items are additional support we still need.
 - [x] Parse `#@$` child records embedded in `LIB` symbols and footprints.
 - [ ] Model and serialize every documented `^^` compound section, especially pins
   and net flags, without requiring consumers to edit raw fields.
-- [ ] Model custom-attribute `` ` `` key/value sections with lossless editing.
+- [x] Model custom-attribute `` ` `` key/value sections with lossless editing.
 - [x] Add first-class insert, remove, and reorder APIs for shapes, layers, sheets,
   and `LIB` children.
 - [ ] Add structured parse errors with document paths, record tokens, and field

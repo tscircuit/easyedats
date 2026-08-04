@@ -86,3 +86,44 @@ test("serializes mutations to a modern object head", async () => {
   expect(JSON.parse(serialized).head.editorVersion).toBe("easyedats-test")
   expect(reparsed.head.version).toBe("easyedats-test")
 })
+
+for (const filename of [
+  "simplefocmini-2024-04-26-schematic.json",
+  "simplefocmini-2024-04-26-pcb.json",
+] as const) {
+  test(`edits custom attributes in ${filename}`, async () => {
+    const source = await readReference(filename)
+    const document = parseEasyEdaSource(source)
+    const root =
+      document instanceof EasyEdaSchematicList ? document.sheets[0] : document
+    const library = root?.shapes.find(
+      (shape): shape is EasyEdaLibrary => shape instanceof EasyEdaLibrary,
+    )
+    if (!library) throw new Error("Expected a library")
+
+    const originalChildren = library.children.map((child) => child.getString())
+    const originalPackage = library.customAttributes.get("package")
+    library.customAttributes
+      .set("package", `${originalPackage ?? "NONE"}-easyedats`)
+      .set("easyedats test", "µ-controller 测试")
+
+    const serialized = document.getString({ trailingNewline: false })
+    const reparsed = parseEasyEdaSource(serialized)
+    const reparsedRoot =
+      reparsed instanceof EasyEdaSchematicList ? reparsed.sheets[0] : reparsed
+    const reparsedLibrary = reparsedRoot?.shapes.find(
+      (shape): shape is EasyEdaLibrary => shape instanceof EasyEdaLibrary,
+    )
+    if (!reparsedLibrary) throw new Error("Expected a reparsed library")
+
+    expect(reparsedLibrary.customAttributes.get("package")).toBe(
+      `${originalPackage ?? "NONE"}-easyedats`,
+    )
+    expect(reparsedLibrary.customAttributes.get("easyedats test")).toBe(
+      "µ-controller 测试",
+    )
+    expect(reparsedLibrary.children.map((child) => child.getString())).toEqual(
+      originalChildren,
+    )
+  })
+}

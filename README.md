@@ -86,6 +86,8 @@ copied into the output.
   shapes and layers; schematic lists provide the corresponding sheet methods.
 - Registered shape classes expose typed accessors for common fields.
 - `EasyEdaSvgNode#svgData` exposes the JSON tree stored by `SVGNODE` records.
+- `EasyEdaLibrary#customAttributes` provides ordered, lossless access to the
+  backtick-delimited `c_para` keys and values used by symbols and footprints.
 - `EasyEdaUnknownShape` preserves unrecognized commands verbatim.
 - Embedded `LIB` records expose their nested shapes through
   `EasyEdaLibrary#getChildren()` and provide matching child mutation methods.
