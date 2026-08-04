@@ -53,6 +53,23 @@ test("registers every documented Standard source shape command", () => {
   }
 })
 
+test("mutates and serializes every documented Standard shape entity", () => {
+  for (const [index, sample] of documentedShapeSamples.entries()) {
+    const shape = EasyEdaShape.parse(sample)
+    const originalClass = shape.constructor
+    const originalField = shape.fields[0] ?? ""
+    shape.fields[0] = `${originalField}-mutation-${index}`
+
+    const serialized = shape.getString()
+    expect(serialized).not.toBe(sample)
+    expect(serialized.startsWith(`${shape.token}~`)).toBe(true)
+
+    const reparsed = EasyEdaShape.parse(serialized)
+    expect(reparsed.constructor).toBe(originalClass)
+    expect(reparsed.getString()).toBe(serialized)
+  }
+})
+
 test("provides typed accessors for PCB vias", () => {
   const via = EasyEdaShape.parse("VIA~432~215~3.2~GND~0.8~gge5")
   expect(via).toBeInstanceOf(EasyEdaVia)

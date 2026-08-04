@@ -47,6 +47,12 @@ if (firstTrack) firstTrack.width = 2
 const updatedSource = pcb.getString()
 ```
 
+`parseEasyEdaSource(source, options)` applies conservative source-size, JSON
+depth, shape-count, sheet-count, and record-length limits. Set
+`validateRecords: true` to reject truncated known records as well. Parse failures
+are `EasyEdaParseError` instances with a stable `code`, JSON `path`, and—when
+applicable—the record token, missing field index, and JSON source position.
+
 `getString()` returns the original bytes when nothing changed. After a
 mutation it emits deterministic two-space JSON while retaining unknown data.
 
@@ -57,6 +63,8 @@ import { parseEasyEdaSource, renderEasyEdaSvg } from "easyedats"
 
 const document = parseEasyEdaSource(source)
 const svg = renderEasyEdaSvg(document, {
+  highlightedNets: ["GND"],
+  selectedShapeIds: ["gge42"],
   title: "Motor controller",
 })
 ```
@@ -67,6 +75,28 @@ first sheet by default; pass `schematicIndex` to select another sheet. Imported
 `SVGNODE` artwork is rendered through an explicit element and attribute
 allowlist; scripts, event handlers, inline styles, and URL references are not
 copied into the output.
+
+Raster `data:` images are rendered by default. Remote images are omitted to
+keep SVG generation private and deterministic; pass `remoteImagePolicy:
+"allow"` to permit HTTP(S) sources. Use `renderEasyEdaSvgWithDiagnostics()` to
+receive the SVG together with structured reports for unsupported records,
+partial rendering, malformed geometry, and blocked image sources.
+
+## CLI
+
+The Bun-powered CLI supports file paths or `-` for standard input/output:
+
+```sh
+bunx easyedats inspect board.json
+bunx easyedats validate board.json
+bunx easyedats normalize board.json normalized.json
+bunx easyedats round-trip board.json
+bunx easyedats svg board.json board.svg
+```
+
+`validate` enables strict record checks and prints structured parser failures to
+standard error. `normalize` emits deterministic two-space JSON, while
+`round-trip` verifies both exact-source and normalized stability.
 
 ## API shape
 
@@ -80,6 +110,8 @@ copied into the output.
   exports and exposes their documents through `list.sheets`.
 - `renderEasyEdaSvg(document, options)` and its
   `serializeEasyEdaToSvg` alias render parsed geometry.
+- `renderEasyEdaSvgWithDiagnostics(document, options)` reports unsupported and
+  partially rendered records without affecting lossless serialization.
 - `EasyEdaDocument#getChildren()` exposes the head, canvas, layers, and shapes
   for generic tree walking.
 - Documents provide `append*`, `insert*`, `remove*`, and `move*` methods for

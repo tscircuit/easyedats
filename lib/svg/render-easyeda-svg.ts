@@ -11,11 +11,35 @@ import { EasyEdaSvgNode, type EasyEdaSvgNodeData } from "../entities/svg-node"
 export interface EasyEdaSvgOptions {
   backgroundColor?: string
   height?: number
+  highlightedNets?: readonly string[]
   padding?: number
+  remoteImagePolicy?: EasyEdaRemoteImagePolicy
   schematicIndex?: number
+  selectedShapeIds?: readonly string[]
   showHiddenLayers?: boolean
   title?: string
   width?: number
+}
+
+export type EasyEdaRemoteImagePolicy = "allow" | "omit"
+
+export type EasyEdaSvgDiagnosticCode =
+  | "image-source-blocked"
+  | "invalid-shape"
+  | "partial-render"
+  | "unsupported-shape"
+
+export interface EasyEdaSvgDiagnostic {
+  code: EasyEdaSvgDiagnosticCode
+  documentPath: readonly (string | number)[]
+  message: string
+  recordToken: string
+  shapeId?: string
+}
+
+export interface EasyEdaSvgResult {
+  diagnostics: EasyEdaSvgDiagnostic[]
+  svg: string
 }
 
 interface SvgBounds {
@@ -26,9 +50,14 @@ interface SvgBounds {
 }
 
 interface RenderContext {
+  diagnostics: EasyEdaSvgDiagnostic[]
   document: EasyEdaDocument
+  highlightedNets: Set<string>
   layerColors: Map<number, string>
   hiddenLayers: Set<number>
+  remoteImagePolicy: EasyEdaRemoteImagePolicy
+  selectedShapeIds: Set<string>
+  shapePaths: WeakMap<EasyEdaShape, readonly (string | number)[]>
   showHiddenLayers: boolean
 }
 
@@ -40,6 +69,68 @@ const DEFAULT_PCB_LAYER_COLORS = new Map<number, string>([
   [10, "#ff4dff"],
   [11, "#c0c0c0"],
   [12, "#ffffff"],
+])
+
+const SCHEMATIC_RENDER_TOKENS = new Set([
+  "A",
+  "AR",
+  "B",
+  "BE",
+  "C",
+  "E",
+  "F",
+  "I",
+  "J",
+  "L",
+  "LIB",
+  "N",
+  "O",
+  "P",
+  "PG",
+  "PI",
+  "PL",
+  "PT",
+  "R",
+  "SVGNODE",
+  "T",
+  "W",
+])
+
+const PCB_RENDER_TOKENS = new Set([
+  "ARC",
+  "CIRCLE",
+  "COPPERAREA",
+  "DIMENSION",
+  "HOLE",
+  "LIB",
+  "PAD",
+  "RECT",
+  "SOLIDREGION",
+  "SVGNODE",
+  "TEXT",
+  "TRACK",
+  "VIA",
+])
+
+const PARTIAL_RENDER_MESSAGES = new Map<string, string>([
+  [
+    "COPPERAREA",
+    "Copper-area cutouts and thermal settings are preserved but not fully rendered",
+  ],
+  [
+    "DIMENSION",
+    "Dimension geometry is rendered without all arrow and label styles",
+  ],
+  ["F", "Net-flag compound sections are only partially rendered"],
+  ["P", "Pin compound sections are only partially rendered"],
+  [
+    "PAD",
+    "Custom pad paths and plated slot details are preserved but not fully rendered",
+  ],
+  [
+    "SOLIDREGION",
+    "Some solid-region subtypes are preserved but not fully rendered",
+  ],
 ])
 
 const SAFE_SVG_NODE_NAMES = new Set([
@@ -161,9 +252,52 @@ function fill(value: string | undefined): string {
   return value
 }
 
-function shapeAttributes(shape: EasyEdaShape): string {
-  const id = shape.getString().match(/(?:gge|frame_)[A-Za-z0-9_-]+/)?.[0]
-  return `data-easyeda-shape="${escapeXml(shape.token)}"${id ? ` data-easyeda-id="${escapeXml(id)}"` : ""}`
+function shapeId(shape: EasyEdaShape): string | undefined {
+  return shape.getString().match(/(?:gge|frame_)[A-Za-z0-9_-]+/)?.[0]
+}
+
+function shapeNet(shape: EasyEdaShape): string | undefined {
+  if (shape.token === "TRACK" || shape.token === "ARC") return shape.fields[2]
+  if (shape.token === "PAD") return shape.fields[6]
+  if (shape.token === "VIA") return shape.fields[3]
+  if (shape.token === "COPPERAREA") return shape.fields[2]
+  return undefined
+}
+
+function shapeAttributes(shape: EasyEdaShape, context: RenderContext): string {
+  const id = shapeId(shape)
+  const net = shapeNet(shape)
+  const selected = id !== undefined && context.selectedShapeIds.has(id)
+  const highlighted = net !== undefined && context.highlightedNets.has(net)
+  const classes = [
+    selected ? "easyeda-selected" : undefined,
+    highlighted ? "easyeda-net-highlighted" : undefined,
+  ].filter((value): value is string => value !== undefined)
+  return [
+    `data-easyeda-shape="${escapeXml(shape.token)}"`,
+    id ? `data-easyeda-id="${escapeXml(id)}"` : undefined,
+    net ? `data-easyeda-net="${escapeXml(net)}"` : undefined,
+    selected ? 'data-easyeda-selected="true"' : undefined,
+    highlighted ? 'data-easyeda-net-highlighted="true"' : undefined,
+    classes.length > 0 ? `class="${classes.join(" ")}"` : undefined,
+  ]
+    .filter((value): value is string => value !== undefined)
+    .join(" ")
+}
+
+function reportDiagnostic(
+  context: RenderContext,
+  shape: EasyEdaShape,
+  code: EasyEdaSvgDiagnosticCode,
+  message: string,
+): void {
+  context.diagnostics.push({
+    code,
+    documentPath: context.shapePaths.get(shape) ?? ["shape"],
+    message,
+    recordToken: shape.token,
+    shapeId: shapeId(shape),
+  })
 }
 
 function strokeFields(
@@ -319,12 +453,32 @@ function pathOrPolygon(
   return `<polygon points="${pointString(points)}" ${attributes}/>`
 }
 
+function safeImageHref(
+  href: string,
+  policy: EasyEdaRemoteImagePolicy,
+): string | undefined {
+  if (
+    /^data:image\/(?:gif|jpeg|png|webp);base64,[A-Za-z0-9+/=\s]+$/i.test(href)
+  ) {
+    return href
+  }
+  if (policy !== "allow") return undefined
+  try {
+    const url = new URL(href)
+    return url.protocol === "http:" || url.protocol === "https:"
+      ? url.href
+      : undefined
+  } catch {
+    return undefined
+  }
+}
+
 function renderSchematicShape(
   shape: EasyEdaShape,
   context: RenderContext,
 ): string[] {
   const fields = shape.fields
-  const attributes = shapeAttributes(shape)
+  const attributes = shapeAttributes(shape, context)
 
   if (shape instanceof EasyEdaLibrary) {
     return [
@@ -368,6 +522,47 @@ function renderSchematicShape(
     const fillField = fields[styleStart + 3]
     return [
       `<ellipse ${attributes} cx="${formatNumber(x)}" cy="${formatNumber(y)}" rx="${formatNumber(radiusX)}" ry="${formatNumber(radiusY)}" fill="${escapeXml(fill(fillField))}" stroke="${escapeXml(stroke.color)}" stroke-width="${formatNumber(stroke.width)}"/>`,
+    ]
+  }
+
+  if (shape.token === "I") {
+    const x = number(fields[0])
+    const y = number(fields[1])
+    const width = number(fields[2])
+    const height = number(fields[3])
+    const rotation = number(fields[4]) ?? 0
+    const href = fields[5]
+      ? safeImageHref(fields[5], context.remoteImagePolicy)
+      : undefined
+    if (
+      x === undefined ||
+      y === undefined ||
+      width === undefined ||
+      height === undefined
+    ) {
+      reportDiagnostic(
+        context,
+        shape,
+        "invalid-shape",
+        "Embedded image is missing numeric x, y, width, or height fields",
+      )
+      return []
+    }
+    if (!href) {
+      reportDiagnostic(
+        context,
+        shape,
+        "image-source-blocked",
+        context.remoteImagePolicy === "allow"
+          ? "Embedded image source is not a safe raster data URL or HTTP(S) URL"
+          : "Embedded image source was omitted by the remote-image policy",
+      )
+      return []
+    }
+    const centerX = x + width / 2
+    const centerY = y + height / 2
+    return [
+      `<image ${attributes} x="${formatNumber(x)}" y="${formatNumber(y)}" width="${formatNumber(width)}" height="${formatNumber(height)}" href="${escapeXml(href)}" preserveAspectRatio="none"${rotation === 0 ? "" : ` transform="rotate(${formatNumber(rotation)} ${formatNumber(centerX)} ${formatNumber(centerY)})"`}/>`,
     ]
   }
 
@@ -521,7 +716,7 @@ function renderSchematicShape(
 
 function renderPcbShape(shape: EasyEdaShape, context: RenderContext): string[] {
   const fields = shape.fields
-  const attributes = shapeAttributes(shape)
+  const attributes = shapeAttributes(shape, context)
 
   if (shape instanceof EasyEdaLibrary) {
     return [
@@ -688,21 +883,77 @@ function renderPcbShape(shape: EasyEdaShape, context: RenderContext): string[] {
 }
 
 function renderShape(shape: EasyEdaShape, context: RenderContext): string[] {
+  const isPcb =
+    context.document.kind === "pcb" || context.document.kind === "pcb-footprint"
+  const supportedTokens = isPcb ? PCB_RENDER_TOKENS : SCHEMATIC_RENDER_TOKENS
+  if (!supportedTokens.has(shape.token)) {
+    reportDiagnostic(
+      context,
+      shape,
+      "unsupported-shape",
+      `EasyEDA ${shape.token || "empty"} records are preserved but not rendered for ${context.document.kind} documents`,
+    )
+    return []
+  }
+  const partialMessage = PARTIAL_RENDER_MESSAGES.get(shape.token)
+  if (partialMessage) {
+    reportDiagnostic(context, shape, "partial-render", partialMessage)
+  }
   if (shape instanceof EasyEdaSvgNode) {
+    if (!isLayerVisible(context, shape.layerId)) return []
     const data = shape.svgData
-    if (!data) return []
+    if (!data) {
+      reportDiagnostic(
+        context,
+        shape,
+        "invalid-shape",
+        "SVGNODE record does not contain a valid SVG node JSON object",
+      )
+      return []
+    }
     const rendered = renderSvgNodeData(
       data,
       context,
       shape.layerId,
-      shapeAttributes(shape),
+      shapeAttributes(shape, context),
     )
-    return rendered ? [rendered] : []
+    if (!rendered) {
+      reportDiagnostic(
+        context,
+        shape,
+        "partial-render",
+        "SVGNODE root was removed by the safe SVG allowlist or layer visibility",
+      )
+      return []
+    }
+    return [rendered]
   }
-  return context.document.kind === "pcb" ||
-    context.document.kind === "pcb-footprint"
+  return isPcb
     ? renderPcbShape(shape, context)
     : renderSchematicShape(shape, context)
+}
+
+function buildShapePaths(
+  document: EasyEdaDocument,
+): WeakMap<EasyEdaShape, readonly (string | number)[]> {
+  const result = new WeakMap<EasyEdaShape, readonly (string | number)[]>()
+  const visit = (
+    shape: EasyEdaShape,
+    path: readonly (string | number)[],
+  ): void => {
+    result.set(shape, path)
+    if (shape instanceof EasyEdaLibrary) {
+      for (let index = 0; index < shape.children.length; index += 1) {
+        const child = shape.children[index]
+        if (child) visit(child, [...path, "children", index])
+      }
+    }
+  }
+  for (let index = 0; index < document.shapes.length; index += 1) {
+    const shape = document.shapes[index]
+    if (shape) visit(shape, ["shape", index])
+  }
+  return result
 }
 
 function readBounds(
@@ -788,10 +1039,10 @@ function resolveDocument(
   return document
 }
 
-export function renderEasyEdaSvg(
+export function renderEasyEdaSvgWithDiagnostics(
   source: EasyEdaDocument,
   options: EasyEdaSvgOptions = {},
-): string {
+): EasyEdaSvgResult {
   const schematicIndex = options.schematicIndex ?? 0
   const document = resolveDocument(source, schematicIndex)
   const rawBounds =
@@ -817,9 +1068,14 @@ export function renderEasyEdaSvg(
       hiddenLayers.add(layer.id)
   }
   const context: RenderContext = {
+    diagnostics: [],
     document,
+    highlightedNets: new Set(options.highlightedNets ?? []),
     layerColors,
     hiddenLayers,
+    remoteImagePolicy: options.remoteImagePolicy ?? "omit",
+    selectedShapeIds: new Set(options.selectedShapeIds ?? []),
+    shapePaths: buildShapePaths(document),
     showHiddenLayers: options.showHiddenLayers ?? false,
   }
   const backgroundColor =
@@ -838,15 +1094,29 @@ export function renderEasyEdaSvg(
       : `EasyEDA ${document.kind}`)
   const shapes = document.shapes.flatMap((shape) => renderShape(shape, context))
 
-  return [
+  const interactionStyles =
+    context.highlightedNets.size > 0 || context.selectedShapeIds.size > 0
+      ? "<style>.easyeda-net-highlighted{filter:drop-shadow(0 0 2px #00ffff)}.easyeda-selected{filter:drop-shadow(0 0 3px #ff00ff);outline:1px solid #ff00ff}</style>"
+      : undefined
+
+  const svg = [
     `<svg xmlns="http://www.w3.org/2000/svg" width="${formatNumber(width)}" height="${formatNumber(height)}" viewBox="${formatNumber(bounds.x)} ${formatNumber(bounds.y)} ${formatNumber(bounds.width)} ${formatNumber(bounds.height)}" role="img" aria-label="${escapeXml(title)}" class="easyeda-document easyeda-${escapeXml(document.kind)}" data-renderer="easyedats">`,
     `<title>${escapeXml(title)}</title>`,
+    ...(interactionStyles ? [interactionStyles] : []),
     `<rect class="easyeda-background" x="${formatNumber(bounds.x)}" y="${formatNumber(bounds.y)}" width="${formatNumber(bounds.width)}" height="${formatNumber(bounds.height)}" fill="${escapeXml(backgroundColor)}"/>`,
     `<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">`,
     ...shapes,
     "</g>",
     "</svg>",
   ].join("\n")
+  return { diagnostics: context.diagnostics, svg }
+}
+
+export function renderEasyEdaSvg(
+  source: EasyEdaDocument,
+  options: EasyEdaSvgOptions = {},
+): string {
+  return renderEasyEdaSvgWithDiagnostics(source, options).svg
 }
 
 export const serializeEasyEdaToSvg = renderEasyEdaSvg
