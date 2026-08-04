@@ -1,5 +1,6 @@
 import type { EasyEdaNode } from "../base-node"
 import { insertAt, moveWithin, removeAt } from "../collection-mutations"
+import { EasyEdaCustomAttributes } from "../custom-attributes"
 import { EasyEdaShape, type EasyEdaShapeInit } from "./shape"
 
 export interface EasyEdaLibraryInit extends EasyEdaShapeInit {
@@ -9,6 +10,7 @@ export interface EasyEdaLibraryInit extends EasyEdaShapeInit {
 export class EasyEdaLibrary extends EasyEdaShape {
   static readonly token = "LIB"
   children: EasyEdaShape[]
+  readonly customAttributes: EasyEdaCustomAttributes
 
   constructor(init: EasyEdaLibraryInit = {}) {
     const [ownSource = "LIB", ...childSources] = (init.source ?? "LIB").split(
@@ -22,6 +24,10 @@ export class EasyEdaLibrary extends EasyEdaShape {
     this.children = init.children
       ? [...init.children]
       : childSources.map((source) => EasyEdaShape.parse(source))
+    this.customAttributes = new EasyEdaCustomAttributes({
+      getSource: () => this.fields[2] ?? "",
+      setSource: (source) => this.setField(2, source),
+    })
   }
 
   override getChildren(): EasyEdaNode[] {

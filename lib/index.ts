@@ -1,5 +1,6 @@
 export * from "./base-node"
 export * from "./canvas"
+export * from "./custom-attributes"
 export * from "./delimited-record"
 export * from "./document"
 export * from "./entities"
