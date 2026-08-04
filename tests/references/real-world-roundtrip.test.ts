@@ -1,5 +1,10 @@
 import { expect, test } from "bun:test"
-import { EasyEdaPcb, EasyEdaSchematicList, parseEasyEdaSource } from "lib"
+import {
+  EasyEdaLibrary,
+  EasyEdaPcb,
+  EasyEdaSchematicList,
+  parseEasyEdaSource,
+} from "lib"
 import { easyEdaReferences } from "../../scripts/reference-manifest"
 import { readReference } from "./read-reference"
 
@@ -14,6 +19,42 @@ for (const reference of easyEdaReferences) {
     else expect(document).toBeInstanceOf(EasyEdaSchematicList)
   })
 }
+
+test("parses the Open_Core0 stress fixture and all embedded footprint records", async () => {
+  const source = await readReference("open-core0-v2-pcb.json")
+  const document = parseEasyEdaSource(source)
+  if (!(document instanceof EasyEdaPcb)) throw new Error("Expected a PCB")
+
+  const libraries = document.shapes.filter(
+    (shape): shape is EasyEdaLibrary => shape instanceof EasyEdaLibrary,
+  )
+  const embeddedShapes = libraries.flatMap((library) => library.children)
+  const tokens = new Set([
+    ...document.shapes.map((shape) => shape.token),
+    ...embeddedShapes.map((shape) => shape.token),
+  ])
+
+  expect(new TextEncoder().encode(source)).toHaveLength(2_639_463)
+  expect(document.shapes).toHaveLength(1_236)
+  expect(libraries).toHaveLength(147)
+  expect(embeddedShapes).toHaveLength(3_437)
+  expect(document.shapes.length + embeddedShapes.length).toBe(4_673)
+  expect(tokens).toEqual(
+    new Set([
+      "ARC",
+      "CIRCLE",
+      "COPPERAREA",
+      "HOLE",
+      "LIB",
+      "PAD",
+      "SOLIDREGION",
+      "SVGNODE",
+      "TEXT",
+      "TRACK",
+      "VIA",
+    ]),
+  )
+})
 
 test("serializes mutations inside a modern schematic list", async () => {
   const source = await readReference("simplefocmini-2024-04-26-schematic.json")

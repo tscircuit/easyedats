@@ -86,6 +86,9 @@ first sheet by default; pass `schematicIndex` to select another sheet.
 
 ## Development
 
+Remaining format and renderer coverage is tracked in
+[CHECKLIST.md](CHECKLIST.md).
+
 ```sh
 bun install
 bun run download-references
@@ -96,10 +99,11 @@ bun run format:check
 
 The small canonical fixtures are the schematic and PCB examples linked from the
 [EasyEDA Standard format documentation](https://docs.easyeda.com/en/DocumentFormat/1-Common-Information/index.html).
-The complete suite also downloads hash-verified, MIT-licensed SimpleFOCMini
-schematic and PCB exports from an immutable Git commit. Those third-party JSON
-files remain gitignored; their committed `.snap.svg` baselines make visual
-changes reviewable.
+The complete suite also downloads hash-verified files from immutable Git
+commits: the MIT-licensed SimpleFOCMini schematic and PCB, plus the CC BY
+4.0-licensed Open_Core0 v2.0 PCB used as a 2.64 MB stress fixture. Those
+third-party JSON files remain gitignored; their committed `.snap.svg` baselines
+make visual changes reviewable.
 
 Update the SVG baselines intentionally with:
 
