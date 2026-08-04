@@ -1,0 +1,616 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="857.059651" viewBox="-22.98 -829.88 1194.96 853.46" role="img" aria-label="SimpleFOCMini schematic" class="easyeda-document easyeda-schematic" data-renderer="easyedats">
+<title>SimpleFOCMini schematic</title>
+<rect class="easyeda-background" x="-22.98" y="-829.88" width="1194.96" height="853.46" fill="#FFFFFF"/>
+<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">
+<g data-easyeda-shape="LIB" data-easyeda-id="frame_lib_1">
+<text data-easyeda-shape="T" data-easyeda-id="gge226" x="570.75" y="-809" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">A</text>
+<path data-easyeda-shape="PT" data-easyeda-id="gge10" d="M 206 -796 L 206 -806 M 206 -10 L 206 0 M 402 -796 L 402 -806 M 402 -10 L 402 0 M 598 -796 L 598 -806 M 598 -10 L 598 0 M 794 -796 L 794 -806 M 794 -10 L 794 0 M 990 -796 L 990 -806 M 990 -10 L 990 0 M 10 -600 L 0 -600 M 1139 -600 L 1149 -600 M 10 -404 L 0 -404 M 1139 -404 L 1149 -404 M 10 -208 L 0 -208 M 1139 -208 L 1149 -208 M 10 -12 L 0 -12 M 1139 -12 L 1149 -12" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text data-easyeda-shape="T" data-easyeda-id="gge223" x="570.75" y="-817.5" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">A</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge13" x="1.5" y="-698" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">A</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge19" x="1140.5" y="-698" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">A</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge25" x="1.5" y="-502" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">B</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge31" x="1140.5" y="-502" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">B</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge37" x="1.5" y="-306" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">C</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge43" x="1140.5" y="-306" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">C</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge49" x="1.5" y="-110" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">D</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge55" x="1140.5" y="-110" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">D</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge61" x="108" y="-797.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">1</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge67" x="108" y="-1.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">1</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge73" x="304" y="-797.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">2</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge79" x="304" y="-1.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">2</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge85" x="500" y="-797.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">3</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge91" x="500" y="-1.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">3</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge97" x="696" y="-797.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">4</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge103" x="696" y="-1.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">4</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge109" x="892" y="-797.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">5</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge115" x="892" y="-1.5" fill="#880000" font-family="Arial, sans-serif" font-size="9" text-anchor="start">5</text>
+<rect data-easyeda-shape="R" data-easyeda-id="gge121" x="10" y="-796" width="1129" height="786" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+<rect data-easyeda-shape="R" data-easyeda-id="gge124" x="0" y="-806" width="1149" height="806" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+<rect data-easyeda-shape="R" data-easyeda-id="gge127" x="694.99995" y="-90" width="444" height="80" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge130" points="695.1,-50.75 1138.63,-50.75" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge133" points="799.63,-30.75 1138.63,-30.75" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge136" points="1059.61,-89.93 1059.63,-50.75" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge139" points="1059.63,-50.75 1059.63,-30.75" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text data-easyeda-shape="T" data-easyeda-id="gge142" x="699.99995" y="-77" fill="#880000" font-family="Arial, sans-serif" font-size="8" text-anchor="start">TITLE:</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge148" x="757.62495" y="-64.41" fill="#0000FF" font-family="Arial, sans-serif" font-size="10" text-anchor="start">Mini</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge154" x="1064.62495" y="-63.75" fill="#880000" font-family="Arial, sans-serif" font-size="8" text-anchor="start">REV:</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge160" x="1102.62495" y="-63.75" fill="#0000FF" font-family="Arial, sans-serif" font-size="9" text-anchor="start">1.1</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge166" x="804.62495" y="-15" fill="#880000" font-family="Arial, sans-serif" font-size="8" text-anchor="start">Date:</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge172" x="851.62495" y="-14.52" fill="#0000FF" font-family="Arial, sans-serif" font-size="9" text-anchor="start">2024-04-26</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge178" x="1063.62495" y="-35" fill="#880000" font-family="Arial, sans-serif" font-size="8" text-anchor="start">Sheet:</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge184" x="1108.62495" y="-34.52" fill="#0000FF" font-family="Arial, sans-serif" font-size="9" text-anchor="start">1/1</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge190" x="943.62495" y="-14.75" fill="#880000" font-family="Arial, sans-serif" font-size="8" text-anchor="start">Drawn By:</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge196" x="1008.63" y="-14.75" fill="#0000FF" font-family="Arial, sans-serif" font-size="9" text-anchor="start">the.skuric</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge202" x="804.62495" y="-36.75" fill="#880000" font-family="Arial, sans-serif" font-size="8" text-anchor="start">Company:</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge208" x="871.24995" y="-36.64" fill="#0000FF" font-family="Arial, sans-serif" font-size="9" text-anchor="start">SimpleFOC</text>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge214" points="799.63,-50.75 799.63,-10.75" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge0f6d890efb672f83">
+<text data-easyeda-shape="T" data-easyeda-id="gge229" x="508.64" y="-588" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">DRV8313PWPR</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge235" x="508.64" y="-597" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">U1</text>
+<rect data-easyeda-shape="R" data-easyeda-id="gge241" x="455" y="-585" width="120" height="160" rx="2" ry="2" fill="none" stroke="#880000" stroke-width="1"/>
+<ellipse data-easyeda-shape="E" data-easyeda-id="gge244" cx="460" cy="-580" rx="1.5" ry="1.5" fill="#880000" stroke="#880000" stroke-width="1"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge247">
+<path d="M 445 -565 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-561" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">CP1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge268">
+<path d="M 445 -555 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-551" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">CP2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge289">
+<path d="M 445 -545 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-541" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">VCP</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge310">
+<path d="M 445 -535 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-531" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">VM</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge331">
+<path d="M 445 -525 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-521" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">OUT1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge352">
+<path d="M 445 -515 h 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="458.7" y="-511" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">PGND1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge373">
+<path d="M 445 -505 h 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="458.7" y="-501" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">PGND2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge394">
+<path d="M 445 -495 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-491" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">OUT2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge415">
+<path d="M 445 -485 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-481" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">OUT3</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge436">
+<path d="M 445 -475 h 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="458.7" y="-471" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">PGND3</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge457">
+<path d="M 445 -465 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-461" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">VM</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge478">
+<path d="M 445 -455 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-451" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">COMPP</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge499">
+<path d="M 445 -445 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="458.7" y="-441" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">COMPN</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge520">
+<path d="M 445 -435 h 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="458.7" y="-431" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">GND</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge541">
+<path d="M 585 -435 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-431" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">V3P3OUT</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge562">
+<path d="M 585 -445 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-441" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">RESET#</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge583">
+<path d="M 585 -455 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-451" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">SLEEP#</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge604">
+<path d="M 585 -465 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-461" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">FAULT#</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge625">
+<path d="M 585 -475 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-471" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">COMPO#</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge646">
+<path d="M 585 -485 h -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="571.3" y="-481" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">GND</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge667">
+<path d="M 585 -495 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-491" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">NC</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge688">
+<path d="M 585 -505 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-501" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">EN3</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge709">
+<path d="M 585 -515 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-511" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">IN3</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge730">
+<path d="M 585 -525 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-521" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">EN2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge751">
+<path d="M 585 -535 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-531" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">IN2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge772">
+<path d="M 585 -545 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-541" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">EN1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge793">
+<path d="M 585 -555 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-551" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">IN1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge814">
+<path d="M 585 -565 h -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="571.3" y="-561" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">GND</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge835">
+<path d="M 585 -575 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="571.3" y="-571" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">EP</text>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge5910d07f8d452266">
+<text data-easyeda-shape="T" data-easyeda-id="gge1801" x="374.01" y="-611" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">100nF</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge1807" x="374.01" y="-620.25" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">C1</text>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1813" points="378,-592 378,-608" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge1816">
+<path d="M 370 -600 h -10" fill="none" stroke="#800" stroke-width="1"/>
+<text x="374" y="-600" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1837" points="390,-600 382,-600" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1840" points="382,-608 382,-592" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge1843">
+<path d="M 390 -600 h 10" fill="none" stroke="#800" stroke-width="1"/>
+<text x="386" y="-600" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1864" points="378,-600 370,-600" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge1942" points="445,-565 445,-600 400,-600" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge1945" points="360,-600 360,-585 420,-585 420,-555 445,-555" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="LIB" data-easyeda-id="gged29d599c159262a3">
+<text data-easyeda-shape="T" data-easyeda-id="gge1957" x="365" y="-542.86" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">100nF</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge1963" x="365" y="-551.81" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">C2</text>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1969" points="363,-553 347,-553" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge1972">
+<path d="M 355 -545 v 10" fill="none" stroke="#800" stroke-width="1"/>
+<text x="355" y="-549" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1993" points="355,-565 355,-557" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge1996" points="347,-557 363,-557" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge1999">
+<path d="M 355 -565 v -10" fill="none" stroke="#800" stroke-width="1"/>
+<text x="355" y="-561" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge2020" points="355,-553 355,-545" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2044" points="445,-545 410,-545 410,-575 355,-575" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2047" points="340,-535 445,-535" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge2050">
+<text x="435" y="-364" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="435,-350 435,-360" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="426,-350 444,-350" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="429,-348 441,-348" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="432,-346 438,-346" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="434,-344 436,-344" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge2107">
+<text x="430" y="-514" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="420,-510 430,-510" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="420,-519 420,-501" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="418,-516 418,-504" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="416,-513 416,-507" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="414,-511 414,-509" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge2167">
+<text x="430" y="-479" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="420,-475 430,-475" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="420,-484 420,-466" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="418,-481 418,-469" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="416,-478 416,-472" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="414,-476 414,-474" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2194" points="445,-505 430,-505 430,-510 430,-515 445,-515" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2201" points="430,-475 445,-475" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2204" points="500,-360 435,-360 435,-455 445,-455" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2207" points="445,-435 435,-435" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge2211" points="445,-445 435,-445" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge2215">
+<text x="340" y="-539" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">VCC</text>
+<polyline points="330,-535 340,-535" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="330,-530 330,-540" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge2258">
+<text x="345" y="-469" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">VCC</text>
+<polyline points="335,-465 345,-465" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="335,-460 335,-470" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge5ae6fc5c0247e226">
+<text data-easyeda-shape="T" data-easyeda-id="gge5996" x="392" y="-417.72" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">100uF</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge6002" x="392" y="-426.94" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">C3</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge6008">
+<path d="M 380 -450 v 17" fill="none" stroke="#8D2323" stroke-width="1"/>
+<text x="383" y="-430" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge6029">
+<path d="M 380 -410 v -19" fill="none" stroke="#8D2323" stroke-width="1"/>
+<text x="383" y="-432" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge6050" points="370,-433 390,-433" fill="none" stroke="#8D2323" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="A" data-easyeda-id="gge6053" d="M 380 -429 A 16.0836 16.0836 0 0 1 390 -426" fill="none" stroke="#8D2323" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="A" data-easyeda-id="gge6056" d="M 370 -426 A 16.2917 16.2917 0 0 1 380 -429" fill="none" stroke="#8D2323" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<rect data-easyeda-shape="R" data-easyeda-id="gge6059" x="370" y="-436" width="4" height="0.1" rx="0" ry="0" fill="#8D2323" stroke="#8D2323" stroke-width="1"/>
+<rect data-easyeda-shape="R" data-easyeda-id="gge6062" x="372" y="-438" width="0.1" height="4" rx="0" ry="0" fill="#8D2323" stroke="#8D2323" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge6140" points="445,-465 345,-465" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge6143" points="380,-450 380,-465" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge6147" points="380,-410 435,-410" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge4e9e02d73735e13b">
+<text data-easyeda-shape="T" data-easyeda-id="gge6814" x="514.04" y="-371" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">470nF</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge6820" x="514.04" y="-380.22" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">C4</text>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge6826" points="518,-360 510,-360" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge6829">
+<path d="M 530 -360 h 10" fill="none" stroke="#800" stroke-width="1"/>
+<text x="526" y="-360" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge6850" points="522,-368 522,-352" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge6853" points="530,-360 522,-360" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge6856">
+<path d="M 510 -360 h -10" fill="none" stroke="#800" stroke-width="1"/>
+<text x="514" y="-360" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge6877" points="518,-352 518,-368" fill="none" stroke="#A00000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge6955" points="585,-435 585,-385 725,-385 725,-360 540,-360" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge6967">
+<text x="610" y="-579" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="620,-575 610,-575" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="620,-566 620,-584" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="622,-569 622,-581" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="624,-572 624,-578" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="626,-574 626,-576" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge6997">
+<text x="595" y="-489" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="605,-485 595,-485" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="605,-476 605,-494" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="607,-479 607,-491" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="609,-482 609,-488" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="611,-484 611,-486" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge7024" points="585,-565 595,-565 595,-575 610,-575" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge7027" points="595,-485 585,-485" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge7060" points="585,-575 605,-575" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge3c124720e6bcc20e">
+<text data-easyeda-shape="T" data-easyeda-id="gge10220" x="161.88" y="-521.94" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">Header-Female-2.54_1x3</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge10226" x="255.3" y="-532.22" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">P1</text>
+<rect data-easyeda-shape="R" data-easyeda-id="gge10232" x="245" y="-520" width="20" height="40" rx="2" ry="2" fill="none" stroke="#880000" stroke-width="1"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge10235">
+<path d="M 275 -490 h -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="260" y="-487" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge10256">
+<path d="M 275 -500 h -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="260" y="-497" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge10277">
+<path d="M 275 -510 h -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="260" y="-507" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">3</text>
+</g>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge10382" points="445,-525 305,-525 305,-510 275,-510" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge10385" points="275,-500 375,-500 375,-495 445,-495" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge10388" points="445,-485 365,-485 365,-490 275,-490" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge11279" points="340,-535 355,-535" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge15409" points="585,-535 645,-535 730,-535 730,-535" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge16806">
+<text x="305" y="-434" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">VCC</text>
+<polyline points="315,-430 305,-430" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="315,-435 315,-425" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge16827">
+<text x="305" y="-419" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="305,-405 305,-415" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="296,-405 314,-405" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="299,-403 311,-403" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="302,-401 308,-401" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="304,-399 306,-399" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge16857" points="280,-420 305,-420 305,-415" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge16904">
+<text x="595" y="-549" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">EN</text>
+<polyline points="595,-545 600,-550 615,-550 615,-540 600,-540 595,-545" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge16937">
+<text x="595" y="-529" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">EN</text>
+<polyline points="595,-525 600,-530 615,-530 615,-520 600,-520 595,-525" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge16955">
+<text x="595" y="-509" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">EN</text>
+<polyline points="595,-505 600,-510 615,-510 615,-500 600,-500 595,-505" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge16970" points="595,-545 585,-545" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge16973" points="585,-525 595,-525" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge22055">
+<text x="725" y="-594" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="725,-600 725,-590" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="734,-600 716,-600" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="731,-602 719,-602" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="728,-604 722,-604" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="726,-606 724,-606" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge22085">
+<text x="565" y="-364" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">3.3V</text>
+<polyline points="565,-370 565,-360" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="560,-370 570,-370" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge22131">
+<text x="790" y="-574" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">3.3V</text>
+<polyline points="790,-580 790,-570" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="785,-580 795,-580" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="ggec613857197974b01">
+<text data-easyeda-shape="T" data-easyeda-id="gge22761" x="667.7" y="-391.84" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">10kΩ</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge22767" x="666" y="-401.84" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">R2</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge22773">
+<path d="M 660 -425 v 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="663" y="-410" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge22794">
+<path d="M 660 -385 v -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="663" y="-400" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<rect data-easyeda-shape="R" data-easyeda-id="gge22815" x="656" y="-415" width="8" height="20" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge96355edf47ab4de2">
+<text data-easyeda-shape="T" data-easyeda-id="gge22824" x="611" y="-392.87" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">10kΩ</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge22830" x="611" y="-401.84" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">R3</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge22836">
+<path d="M 605 -425 v 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="608" y="-410" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge22857">
+<path d="M 605 -385 v -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="608" y="-400" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<rect data-easyeda-shape="R" data-easyeda-id="gge22878" x="601" y="-415" width="8" height="20" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge22954" points="605,-425 605,-445 585,-445" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge22957" points="585,-455 660,-455 660,-425" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge22967">
+<text x="610" y="-449" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">nRes</text>
+<polyline points="610,-445 615,-450 630,-450 630,-440 615,-440 610,-445" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge22983">
+<text x="665" y="-459" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">nSlp</text>
+<polyline points="665,-455 670,-460 685,-460 685,-450 670,-450 665,-455" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge23016" points="610,-445 605,-445" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge23020" points="665,-455 660,-455" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge23042" points="795,-535 785,-535" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge23063" points="785,-545 795,-545" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge23066">
+<text x="730" y="-469" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">nFlt</text>
+<polyline points="730,-465 735,-470 750,-470 750,-460 735,-460 730,-465" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge23096" points="730,-465 585,-465" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge23117" points="825,-565 825,-555 795,-555 785,-555" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge23141">
+<text x="825" y="-569" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="825,-575 825,-565" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="834,-575 816,-575" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="831,-577 819,-577" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="828,-579 822,-579" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="826,-581 824,-581" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="ggeaae50cdc766804b1">
+<text data-easyeda-shape="T" data-easyeda-id="gge24306" x="731" y="-392.87" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">10kΩ</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge24312" x="731" y="-401.84" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">R1</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge24318">
+<path d="M 725 -425 v 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="728" y="-410" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge24339">
+<path d="M 725 -385 v -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="728" y="-400" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<rect data-easyeda-shape="R" data-easyeda-id="gge24360" x="721" y="-415" width="8" height="20" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge24373" points="725,-425 725,-465" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="LIB" data-easyeda-id="ggee03f491cb2c5bef7">
+<text data-easyeda-shape="T" data-easyeda-id="gge24927" x="691" y="-572.81" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">10kΩ</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge24933" x="691" y="-581.67" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">R4</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge24939">
+<path d="M 685 -605 v 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="688" y="-590" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge24960">
+<path d="M 685 -565 v -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="688" y="-580" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<rect data-easyeda-shape="R" data-easyeda-id="gge24981" x="681" y="-595" width="8" height="20" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge6c3ff85059447501">
+<text data-easyeda-shape="T" data-easyeda-id="gge25281" x="749.76" y="-601.94" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">Female header2.54mm2*5p Straight</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge25287" x="751.54" y="-587.22" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">H1</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge25293">
+<path d="M 785 -525 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="773" y="-522" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">10</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25314">
+<path d="M 785 -535 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="773" y="-532" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">8</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25335">
+<path d="M 785 -545 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="773" y="-542" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">6</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25356">
+<path d="M 785 -555 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="773" y="-552" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">4</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25377">
+<path d="M 785 -565 h -10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="773" y="-562" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25398">
+<path d="M 730 -525 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="742" y="-522" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">9</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25419">
+<path d="M 730 -535 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="742" y="-532" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">7</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25440">
+<path d="M 730 -545 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="742" y="-542" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">5</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25461">
+<path d="M 730 -555 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="742" y="-552" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">3</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25482">
+<path d="M 730 -565 h 10" fill="none" stroke="#880000" stroke-width="1"/>
+<text x="742" y="-562" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<ellipse data-easyeda-shape="E" data-easyeda-id="gge25503" cx="745" cy="-570" rx="1.5" ry="1.5" fill="#880000" stroke="#880000" stroke-width="1"/>
+<rect data-easyeda-shape="R" data-easyeda-id="gge25506" x="740" y="-575" width="35" height="60" rx="2" ry="2" fill="none" stroke="#880000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge25521" points="730,-565 725,-565 725,-590" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge25524" points="785,-565 790,-565 790,-570" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge25620" points="785,-525 795,-525" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge25629">
+<text x="795" y="-529" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">nFlt</text>
+<polyline points="795,-525 800,-530 815,-530 815,-520 800,-520 795,-525" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge25665">
+<text x="795" y="-549" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">nRes</text>
+<polyline points="795,-545 800,-550 815,-550 815,-540 800,-540 795,-545" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge25683">
+<text x="795" y="-539" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">nSlp</text>
+<polyline points="795,-535 800,-540 815,-540 815,-530 800,-530 795,-535" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge4442964e8f2ce02b">
+<text data-easyeda-shape="T" data-easyeda-id="gge25861" x="233.31" y="-443.64" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">TB002-500-02BE</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge25867" x="234.26" y="-452.55" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">TB_PWR1</text>
+<rect data-easyeda-shape="R" data-easyeda-id="gge25873" x="230.13" y="-438.02" width="20" height="26" rx="0" ry="0" fill="#FFFFB0" stroke="#800000" stroke-width="0.5"/>
+<g data-easyeda-shape="P" data-easyeda-id="gge25876">
+<path d="M 280 -420 h -30" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="242.13" y="-415.52" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge25897">
+<path d="M 280 -431 h -30" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="242.13" y="-426.52" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge25981" points="305,-430 280,-430 280,-431" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge654a0509ed85acc8">
+<text data-easyeda-shape="T" data-easyeda-id="gge26128" x="348.26" y="-292" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">19-213/Y2C-CQ2R2L/3T(CY)</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge26134" x="348.26" y="-301" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">LED1</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge26140">
+<path d="M 340 -270 h 15" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="360" y="-267" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">A</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge26161">
+<path d="M 380 -270 h -15" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="360" y="-267" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">C</text>
+</g>
+<polygon data-easyeda-shape="PG" data-easyeda-id="gge26182" points="355,-264 365,-270 355,-276" fill="#880000" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge26185" points="362,-278 369,-285" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge26188" points="358,-282 365,-289" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon data-easyeda-shape="PG" data-easyeda-id="gge26191" points="369,-285 365,-283 367,-281" fill="#880000" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon data-easyeda-shape="PG" data-easyeda-id="gge26194" points="365,-289 361,-287 363,-285" fill="#880000" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="PL" data-easyeda-id="gge26197" points="365,-276 365,-264" fill="none" stroke="#880000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge148a7d7e3d44fe09">
+<text data-easyeda-shape="T" data-easyeda-id="gge26287" x="299" y="-256.94" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">1kΩ</text>
+<text data-easyeda-shape="T" data-easyeda-id="gge26293" x="304.04" y="-246.94" fill="#000080" font-family="Arial, sans-serif" font-size="9" text-anchor="start">R5</text>
+<g data-easyeda-shape="P" data-easyeda-id="gge26299">
+<path d="M 330 -270 h -10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="315" y="-267" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">2</text>
+</g>
+<g data-easyeda-shape="P" data-easyeda-id="gge26320">
+<path d="M 290 -270 h 10" fill="none" stroke="#000000" stroke-width="1"/>
+<text x="305" y="-267" fill="#0000ff" font-family="Arial, sans-serif" font-size="7">1</text>
+</g>
+<rect data-easyeda-shape="R" data-easyeda-id="gge26341" x="300" y="-274" width="20" height="8" rx="0" ry="0" fill="none" stroke="#880000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge26347">
+<text x="275" y="-279" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">VCC</text>
+<polyline points="275,-285 275,-275" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="270,-285 280,-285" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge26368">
+<text x="400" y="-269" fill="#000000" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">GND</text>
+<polyline points="400,-255 400,-265" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="391,-255 409,-255" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="394,-253 406,-253" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="397,-251 403,-251" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="399,-249 401,-249" fill="none" stroke="#000000" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26395" points="400,-265 400,-270 380,-270" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26398" points="340,-270 330,-270" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26401" points="290,-270 275,-270 275,-275" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26406" points="685,-565 685,-555 730,-555" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26409" points="585,-505 595,-505" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge26415">
+<text x="685" y="-614" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">EN</text>
+<polyline points="685,-610 680,-615 680,-630 690,-630 690,-615 685,-610" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26430" points="685,-605 685,-610" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge26454">
+<text x="630" y="-519" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">IN3</text>
+<polyline points="630,-515 635,-520 650,-520 650,-510 635,-510 630,-515" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge26472">
+<text x="630" y="-559" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">IN1</text>
+<polyline points="630,-555 635,-560 650,-560 650,-550 635,-550 630,-555" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26487" points="585,-555 630,-555" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26490" points="630,-515 585,-515" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="F" data-easyeda-id="gge26496">
+<text x="710" y="-529" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">IN1</text>
+<polyline points="710,-525 705,-520 690,-520 690,-530 705,-530 710,-525" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="F" data-easyeda-id="gge26514">
+<text x="710" y="-549" fill="#0000FF" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">IN3</text>
+<polyline points="710,-545 705,-540 690,-540 690,-550 705,-550 710,-545" fill="none" stroke="#0000FF" stroke-width="1"/>
+</g>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26529" points="730,-545 710,-545" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="W" data-easyeda-id="gge26532" points="710,-525 730,-525" fill="none" stroke="#008800" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge2198" cx="430" cy="-510" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge2208" cx="435" cy="-435" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge2212" cx="435" cy="-445" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge2249" cx="355" cy="-535" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge6144" cx="380" cy="-465" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge6148" cx="435" cy="-410" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge11280" cx="340" cy="-535" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge11590" cx="605" cy="-575" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge22959" cx="435" cy="-360" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge22960" cx="565" cy="-360" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge22962" cx="605" cy="-385" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge22964" cx="660" cy="-385" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge23017" cx="605" cy="-445" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge23021" cx="660" cy="-455" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge24370" cx="725" cy="-385" r="2.5" fill="#CC0000"/>
+<circle data-easyeda-shape="J" data-easyeda-id="gge24374" cx="725" cy="-465" r="2.5" fill="#CC0000"/>
+</g>
+</svg>

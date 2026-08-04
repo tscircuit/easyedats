@@ -1,5 +1,6 @@
 import { expect, test } from "bun:test"
 import {
+  EasyEdaPcbText,
   EasyEdaShape,
   EasyEdaUnknownShape,
   EasyEdaVia,
@@ -63,14 +64,34 @@ test("provides typed accessors for PCB vias", () => {
   expect(via.id).toBe("gge5")
 })
 
+test("provides typed accessors for PCB text", () => {
+  const text = EasyEdaShape.parse(
+    "TEXT~L~4084~3052.5~0.8~90~1~4~~3.937~SimpleFOC~M 0 0 L 1 1~~gge6",
+  )
+  expect(text).toBeInstanceOf(EasyEdaPcbText)
+  if (!(text instanceof EasyEdaPcbText)) throw new Error("Expected PCB text")
+
+  expect(text.text).toBe("SimpleFOC")
+  expect(text.rotation).toBe(90)
+  expect(text.layerId).toBe(4)
+  expect(text.fontSize).toBe(3.937)
+})
+
 test("selects Standard symbol and footprint root classes", () => {
   const symbol = parseEasyEdaSchematicSymbol(
     JSON.stringify({ head: "7~1.11.3~400~300~", shape: [] }),
+  )
+  const modernSymbol = parseEasyEdaSchematicSymbol(
+    JSON.stringify({
+      head: { docType: "2", editorVersion: "6.5.42" },
+      shape: [],
+    }),
   )
   const footprint = parseEasyEdaPcbFootprint(
     JSON.stringify({ head: "4~1.11.3~400~300~", shape: [] }),
   )
 
   expect(symbol.kind).toBe("schematic-symbol")
+  expect(modernSymbol.kind).toBe("schematic-symbol")
   expect(footprint.kind).toBe("pcb-footprint")
 })

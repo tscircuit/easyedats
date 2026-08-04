@@ -8,6 +8,10 @@ out
 dist
 *.tgz
 
+# pinned third-party test inputs (download with bun run download-references)
+references/*
+!references/README.md
+
 # code coverage
 coverage
 *.lcov

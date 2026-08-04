@@ -1,0 +1,524 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="359.2" height="315.8" viewBox="4055.5 3003.5 179.6 157.9" role="img" aria-label="SimpleFOCMini PCB" class="easyeda-document easyeda-pcb" data-renderer="easyedats">
+<title>SimpleFOCMini PCB</title>
+<rect class="easyeda-background" x="4055.5" y="3003.5" width="179.6" height="157.9" fill="#000000"/>
+<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4534" data-layer="2" points="4101.5,3067.5 4095,3067.5 4094.5,3067.5" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7068" data-layer="2" points="4094.5,3067.5 4085,3077 4085,3080" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4537" data-layer="2" points="4101.5,3067.5 4107,3067.5" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9030" data-layer="2" points="4119.5,3046 4114.5,3051 4086.5,3051 4083.5,3054 4083.5,3061 4086,3063.5" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4877" data-layer="2" points="4099.5,3056 4104.5,3061 4111.5,3061 4113.5,3063 4117.5,3063 4119.5,3065 4119.5,3067" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4880" data-layer="2" points="4115.5,3067 4113.5,3067 4109.105,3062.605 4096.105,3062.605 4089.5,3056" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4841" data-layer="2" points="4109.5,3056 4114.5,3061 4120.2998,3061 4125.5,3066.2002 4125.5,3067.5" fill="none" stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 4096.5 3100.5 L 4094 3101.5 L 4094 3106 L 4094 3109 L 4095 3110 L 4098 3110 L 4126 3110 L 4129 3107 L 4140 3107 L 4145 3102.5 L 4145 3094 L 4142 3092.5 L 4135.5 3092.5 L 4124 3100.5 L 4099.5 3100.5 Z" data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge2062" data-layer="2" fill="#0000FF" fill-opacity="0.45" stroke="#0000FF" stroke-width="0.5"/>
+<path d="M 4163.5 3126.5 L 4162.5 3127.5 L 4075.5 3127.5 L 4066.5 3118.5 L 4066 3038.5 L 4072.5 3035.5 L 4073 3036 L 4165.5 3036 L 4167.5 3038 L 4169 3038.5 L 4176.5 3046 L 4176.5 3113.5 L 4163.5 3126.5 Z" data-easyeda-shape="COPPERAREA" data-easyeda-id="gge5598" data-layer="2" fill="#0000FF" fill-opacity="0.45" stroke="#0000FF" stroke-width="1"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9501" data-layer="4" points="4123,3074 4128,3074 4128,3081.4018 4128,3086.5 4123,3086.4018" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7731" data-layer="4" points="4095.5,3074 4095.5,3098.25 4123,3098.25 4123,3074 4095.5,3074" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7746" data-layer="4" points="4106.5718,3074 4106.75,3098.25" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7743" data-layer="4" points="4111.2202,3074 4111.52,3074 4111.75,3098.25" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7740" data-layer="4" points="4095.5,3084.1643 4095.5,3086.25 4123,3086.25 4123,3083.9143" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7737" data-layer="4" points="4101.1201,3074 4100.9717,3098.25" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7734" data-layer="4" points="4116.7217,3074 4117,3074.2783 4116.9629,3098.25" fill="none" stroke="#66CC33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2930" data-layer="4" x="4084" y="3052.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937" transform="rotate(90 4084 3052.5)">docs.simplefoc.com</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2954" data-layer="4" x="4157.5" y="3116.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937">04/24</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6013" data-layer="4" x="4115.5" y="3075.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4115.5 3075.5)">EN</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6010" data-layer="4" x="4110.5" y="3075.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4110.5 3075.5)">IN3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6007" data-layer="4" x="4105.5" y="3075.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4105.5 3075.5)">IN2</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6004" data-layer="4" x="4099.5" y="3075.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4099.5 3075.5)">IN1</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6001" data-layer="4" x="4121" y="3075.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4121 3075.5)">GND</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6061" data-layer="4" x="4121.25" y="3089.75" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4121.25 3089.75)">3V3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6064" data-layer="4" x="4115.75" y="3089.75" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4115.75 3089.75)">GND</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6067" data-layer="4" x="4110.75" y="3090.25" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4110.75 3090.25)">nRT</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6070" data-layer="4" x="4105.75" y="3090.25" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4105.75 3090.25)">nSP</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6073" data-layer="4" x="4100.25" y="3090.25" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4100.25 3090.25)">nFT</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6190" data-layer="4" x="4101.5" y="3111.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">M1</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6193" data-layer="4" x="4112" y="3111.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">M2</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6196" data-layer="4" x="4122" y="3111.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">M3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6199" data-layer="4" x="4151.5" y="3060.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937" transform="rotate(90 4151.5 3060.5)">8-35V</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6202" data-layer="4" x="4163" y="3053.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937" transform="rotate(90 4163 3053.5)">-</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6205" data-layer="4" x="4162" y="3089" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937">+</text>
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge6247" data-layer="4" cx="4144.5" cy="3041.5" r="1.118" fill="none" stroke="#66CC33" stroke-width="1"/>
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge6255" data-layer="4" cx="4130.5" cy="3071.5" r="1.118" fill="none" stroke="#66CC33" stroke-width="1"/>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge8730" data-layer="4" x="4157.5" y="3109.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937">Mini v1.1</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge8742" data-layer="4" x="4158" y="3102" fill="#66CC33" font-family="Arial, sans-serif" font-size="3.937">SimpleFOC</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9517" data-layer="4" x="4127" y="3075.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559" transform="rotate(90 4127 3075.5)">GND</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9595" data-layer="4" x="4087" y="3042.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">IN1</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9592" data-layer="4" x="4097.5" y="3042.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">IN2</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9589" data-layer="4" x="4107.5" y="3042.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">IN3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9586" data-layer="4" x="4117.5" y="3042.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">EN</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9547" data-layer="4" x="4131.5" y="3042.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">GND</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9445" data-layer="4" x="4141.5" y="3042.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">GND</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9700" data-layer="4" x="4092.5" y="3063.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">nFT</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9703" data-layer="4" x="4103" y="3063.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">nSP</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9706" data-layer="4" x="4112.5" y="3063.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">nRT</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9709" data-layer="4" x="4123" y="3063" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">GND</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9712" data-layer="4" x="4134" y="3063.5" fill="#66CC33" font-family="Arial, sans-serif" font-size="2.7559">3V3</text>
+<path data-easyeda-shape="DIMENSION" data-easyeda-id="gge8592" data-layer="12" d="M4220.0584,3038.5L4220.0584,3121M4218.5584,3044.5L4220.0584,3038.5L4221.5584,3044.5M4218.5584,3115L4220.0584,3121L4221.5584,3115M 4205.742 3115.9347L4205.282 3115.9347 L4204.372 3115.4747 L4203.922 3115.0247 L4203.472 3114.1147 L4203.472 3112.2947 L4203.922 3111.3847 L4204.372 3110.9347 L4205.282 3110.4747 L4206.192 3110.4747 L4207.102 3110.9347 L4208.472 3111.8447 L4213.012 3116.3847 L4213.012 3110.0247 M 4203.472 3104.2947L4203.922 3105.6547 L4205.282 3106.5647 L4207.562 3107.0247 L4208.922 3107.0247 L4211.192 3106.5647 L4212.562 3105.6547 L4213.012 3104.2947 L4213.012 3103.3847 L4212.562 3102.0247 L4211.192 3101.1147 L4208.922 3100.6547 L4207.562 3100.6547 L4205.282 3101.1147 L4203.922 3102.0247 L4203.472 3103.3847 L4203.472 3104.2947 M 4210.742 3097.2047L4211.192 3097.6547 L4211.652 3097.2047 L4211.192 3096.7547 L4210.742 3097.2047 M 4206.652 3087.8447L4208.012 3088.2947 L4208.922 3089.2047 L4209.372 3090.5647 L4209.372 3091.0247 L4208.922 3092.3847 L4208.012 3093.2947 L4206.652 3093.7547 L4206.192 3093.7547 L4204.832 3093.2947 L4203.922 3092.3847 L4203.472 3091.0247 L4203.472 3090.5647 L4203.922 3089.2047 L4204.832 3088.2947 L4206.652 3087.8447 L4208.922 3087.8447 L4211.192 3088.2947 L4212.562 3089.2047 L4213.012 3090.5647 L4213.012 3091.4747 L4212.562 3092.8447 L4211.652 3093.2947 M 4203.472 3079.3847L4203.472 3083.9347 L4207.562 3084.3847 L4207.102 3083.9347 L4206.652 3082.5647 L4206.652 3081.2047 L4207.102 3079.8447 L4208.012 3078.9347 L4209.372 3078.4747 L4210.282 3078.4747 L4211.652 3078.9347 L4212.562 3079.8447 L4213.012 3081.2047 L4213.012 3082.5647 L4212.562 3083.9347 L4212.102 3084.3847 L4211.192 3084.8447 M 4203.472 3070.0247L4203.472 3074.5647 L4207.562 3075.0247 L4207.102 3074.5647 L4206.652 3073.2047 L4206.652 3071.8447 L4207.102 3070.4747 L4208.012 3069.5647 L4209.372 3069.1147 L4210.282 3069.1147 L4211.652 3069.5647 L4212.562 3070.4747 L4213.012 3071.8447 L4213.012 3073.2047 L4212.562 3074.5647 L4212.102 3075.0247 L4211.192 3075.4747 M 4206.652 3066.1147L4213.012 3066.1147 M 4208.472 3066.1147L4207.102 3064.7547 L4206.652 3063.8447 L4206.652 3062.4747 L4207.102 3061.5647 L4208.472 3061.1147 L4213.012 3061.1147 M 4208.472 3061.1147L4207.102 3059.7547 L4206.652 3058.8447 L4206.652 3057.4747 L4207.102 3056.5647 L4208.472 3056.1147 L4213.012 3056.1147 M 4206.652 3053.1147L4213.012 3053.1147 M 4208.472 3053.1147L4207.102 3051.7547 L4206.652 3050.8447 L4206.652 3049.4747 L4207.102 3048.5647 L4208.472 3048.1147 L4213.012 3048.1147 M 4208.472 3048.1147L4207.102 3046.7547 L4206.652 3045.8447 L4206.652 3044.4747 L4207.102 3043.5647 L4208.472 3043.1147 L4213.012 3043.1147 M 4150 3038.5 4230.0584 3038.5 M 4150 3121 4230.0584 3121" fill="none" stroke="#FFFFFF" stroke-width="0.5"/>
+<path data-easyeda-shape="DIMENSION" data-easyeda-id="gge8595" data-layer="12" d="M4070,3018.5608L4082.6136,3018.5608M4159.8864,3018.5608L4172.5,3018.5608M4076,3020.0608L4070,3018.5608L4076,3017.0608M4166.5,3020.0608L4172.5,3018.5608L4166.5,3017.0608M 4085.07 3010.74L4085.07 3010.29 L4085.52 3009.38 L4085.98 3008.92 L4086.89 3008.47 L4088.7 3008.47 L4089.61 3008.92 L4090.07 3009.38 L4090.52 3010.29 L4090.52 3011.2 L4090.07 3012.11 L4089.16 3013.47 L4084.61 3018.02 L4090.98 3018.02 M 4099.43 3009.83L4098.98 3008.92 L4097.61 3008.47 L4096.7 3008.47 L4095.34 3008.92 L4094.43 3010.29 L4093.98 3012.56 L4093.98 3014.83 L4094.43 3016.65 L4095.34 3017.56 L4096.7 3018.02 L4097.16 3018.02 L4098.52 3017.56 L4099.43 3016.65 L4099.89 3015.29 L4099.89 3014.83 L4099.43 3013.47 L4098.52 3012.56 L4097.16 3012.11 L4096.7 3012.11 L4095.34 3012.56 L4094.43 3013.47 L4093.98 3014.83 M 4103.34 3015.74L4102.89 3016.2 L4103.34 3016.65 L4103.8 3016.2 L4103.34 3015.74 M 4109.52 3008.47L4108.16 3008.92 L4107.25 3010.29 L4106.8 3012.56 L4106.8 3013.92 L4107.25 3016.2 L4108.16 3017.56 L4109.52 3018.02 L4110.43 3018.02 L4111.8 3017.56 L4112.7 3016.2 L4113.16 3013.92 L4113.16 3012.56 L4112.7 3010.29 L4111.8 3008.92 L4110.43 3008.47 L4109.52 3008.47 M 4117.07 3008.47L4122.07 3008.47 L4119.34 3012.11 L4120.7 3012.11 L4121.61 3012.56 L4122.07 3013.02 L4122.52 3014.38 L4122.52 3015.29 L4122.07 3016.65 L4121.16 3017.56 L4119.8 3018.02 L4118.43 3018.02 L4117.07 3017.56 L4116.61 3017.11 L4116.16 3016.2 M 4130.98 3008.47L4126.43 3008.47 L4125.98 3012.56 L4126.43 3012.11 L4127.8 3011.65 L4129.16 3011.65 L4130.52 3012.11 L4131.43 3013.02 L4131.89 3014.38 L4131.89 3015.29 L4131.43 3016.65 L4130.52 3017.56 L4129.16 3018.02 L4127.8 3018.02 L4126.43 3017.56 L4125.98 3017.11 L4125.52 3016.2 M 4134.89 3011.65L4134.89 3018.02 M 4134.89 3013.47L4136.25 3012.11 L4137.16 3011.65 L4138.52 3011.65 L4139.43 3012.11 L4139.89 3013.47 L4139.89 3018.02 M 4139.89 3013.47L4141.25 3012.11 L4142.16 3011.65 L4143.52 3011.65 L4144.43 3012.11 L4144.89 3013.47 L4144.89 3018.02 M 4147.89 3011.65L4147.89 3018.02 M 4147.89 3013.47L4149.25 3012.11 L4150.16 3011.65 L4151.52 3011.65 L4152.43 3012.11 L4152.89 3013.47 L4152.89 3018.02 M 4152.89 3013.47L4154.25 3012.11 L4155.16 3011.65 L4156.52 3011.65 L4157.43 3012.11 L4157.89 3013.47 L4157.89 3018.02 M 4070 3044.5 4070 3008.5608 M 4172.5 3044.5 4172.5 3008.5608" fill="none" stroke="#FFFFFF" stroke-width="0.5"/>
+<path data-easyeda-shape="DIMENSION" data-easyeda-id="gge8897" data-layer="12" d="M4078.5112,3146.3238L4086.2556,3146.3238M4156.2556,3146.3238L4164,3146.3238M4084.5112,3147.8238L4078.5112,3146.3238L4084.5112,3144.8238M4158,3147.8238L4164,3146.3238L4158,3144.8238M 4088.71 3138.51L4088.71 3138.05 L4089.16 3137.14 L4089.62 3136.69 L4090.53 3136.23 L4092.35 3136.23 L4093.26 3136.69 L4093.71 3137.14 L4094.16 3138.05 L4094.16 3138.96 L4093.71 3139.87 L4092.8 3141.23 L4088.26 3145.78 L4094.62 3145.78 M 4097.62 3138.05L4098.53 3137.6 L4099.89 3136.23 L4099.89 3145.78 M 4103.35 3143.51L4102.89 3143.96 L4103.35 3144.41 L4103.8 3143.96 L4103.35 3143.51 M 4113.16 3136.23L4108.62 3145.78 M 4106.8 3136.23L4113.16 3136.23 M 4116.16 3138.05L4117.07 3137.6 L4118.44 3136.23 L4118.44 3145.78 M 4125.98 3136.23L4121.44 3142.6 L4128.26 3142.6 M 4125.98 3136.23L4125.98 3145.78 M 4131.26 3139.41L4131.26 3145.78 M 4131.26 3141.23L4132.62 3139.87 L4133.53 3139.41 L4134.89 3139.41 L4135.8 3139.87 L4136.26 3141.23 L4136.26 3145.78 M 4136.26 3141.23L4137.62 3139.87 L4138.53 3139.41 L4139.89 3139.41 L4140.8 3139.87 L4141.26 3141.23 L4141.26 3145.78 M 4144.26 3139.41L4144.26 3145.78 M 4144.26 3141.23L4145.62 3139.87 L4146.53 3139.41 L4147.89 3139.41 L4148.8 3139.87 L4149.26 3141.23 L4149.26 3145.78 M 4149.26 3141.23L4150.62 3139.87 L4151.53 3139.41 L4152.89 3139.41 L4153.8 3139.87 L4154.26 3141.23 L4154.26 3145.78 M 4078.5112 3090.2707 4078.5112 3156.3238 M 4164 3090.2712 4164 3156.3238" fill="none" stroke="#FFFFFF" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge5439" data-layer="10" points="4075.5,3121 4166,3121" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8749" data-layer="10" points="4166.08,3107.01 4164,3106.96" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8745" data-layer="10" points="4166.08,3052.49 4164,3052.58" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7419" data-layer="10" points="4164,3052.5 4164,3106.96" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge5355" data-layer="10" points="4166,3038.5 4078,3038.5" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7485" data-layer="10" points="4078.47,3051.69 4078.53,3107.89" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8708" data-layer="10" points="4075.85,3107.96 4078.53,3107.89" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8704" data-layer="10" points="4075.95,3051.65 4078.47,3051.69" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge7511" data-layer="10" d="M4078,3038.5 A6.6708,6.6708 0 1 0 4075.946,3051.6477" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge7553" data-layer="10" d="M4075.8457,3107.9561 A6.5765,6.5765 0 0 0 4075.9539,3121.0538" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge7541" data-layer="10" d="M4166.0828,3052.4935 A7.0178,7.0178 0 0 0 4166,3038.5" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge7550" data-layer="10" d="M4166,3121 A7.0178,7.0178 0 0 0 4166.0828,3107.0065" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7368" data-layer="1" points="4144.97,3069.5 4144.97,3071.53 4142.76,3073.74 4140.59,3073.74 4131.5,3073.74" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8659" data-layer="1" points="4101.6,3096.78 4101.6,3100.1 4105.5,3104 4105.5,3109.5 4099.5,3115.5" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9339" data-layer="1" points="4111.84,3096.78 4111.84,3106.34 4119.5,3114 4119.5,3115.5" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9174" data-layer="1" points="4086,3063.5 4086,3068 4085,3068" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7581" data-layer="1" points="4129.5,3056 4134,3051.5 4143.93,3051.5 4145,3053 4144.97,3056" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7347" data-layer="1" points="4115.5,3067 4116,3066.5 4116,3064 4118,3062 4133,3062 4135.5,3059.5 4135.5,3057.5 4136.5,3056 4139.034,3056" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7272" data-layer="1" points="4125.5,3067.5 4134.5,3067.5 4136.5,3069.5 4139.03,3069.5" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8662" data-layer="1" points="4109.28,3096.78 4109.28,3107.78 4109.5,3115.5" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4519" data-layer="1" points="4101.5,3067.5 4101.6021,3067.6021 4101.6021,3074.218" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7113" data-layer="1" points="4085,3080 4085,3073.966" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9018" data-layer="1" points="4089.5,3046 4084,3051.5 4084,3058 4089,3063 4089,3065.5 4093.925,3070.425 4093.925,3074.218" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9015" data-layer="1" points="4099.5,3046 4094.5,3051 4094.5,3060.5 4099.043,3065.043 4099.043,3074.218" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9012" data-layer="1" points="4109.5,3046 4104.161,3051.339 4104.161,3074.218" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7386" data-layer="1" points="4131.5,3073.744 4124.6339,3073.744 4124.6299,3073.74" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7578" data-layer="1" points="4144.966,3063 4144.966,3069.5 4144.9658,3069.5" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7590" data-layer="1" points="4144.966,3056 4144.966,3063 4144.9658,3063" fill="none" stroke="#FF0000" stroke-width="1.9685" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4745" data-layer="1" points="4125.5,3067.5 4124,3067.5 4122.0801,3069.4199 4122.0801,3074.22" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7344" data-layer="1" points="4139.034,3063 4138.034,3064 4122.5,3064 4119.5,3067" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4719" data-layer="1" points="4115.5,3067 4116.96,3068.46 4116.96,3074.22" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4685" data-layer="1" points="4119.52,3074.22 4119.5,3074.2 4119.5,3067" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4595" data-layer="1" points="4096.484,3074.218 4096.484,3069.484 4094.5,3067.5" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge4585" data-layer="1" points="4107,3067.5 4106.7212,3067.7788 4106.7212,3074.218" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 4097.5 3109.5 L 4096.5 3108 L 4096.5 3103 L 4098 3101.5 L 4098 3093.5 L 4098.5 3093 L 4099.5 3093 L 4100 3093.5 L 4100 3101 L 4103.5 3105 L 4103.5 3108.5 L 4102.5 3109.5 L 4100.5 3109.5 L 4097.5 3109.5 Z" data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge1987" data-layer="1" fill="#FF0000" fill-opacity="0.45" stroke="#FF0000" stroke-width="0.5"/>
+<path d="M 4128 3109.5 L 4124.5 3107.5 L 4118.5 3107.5 L 4116 3105 L 4116 3093.5 L 4116.5 3093 L 4117.5 3093 L 4118 3093.5 L 4118 3100.5 L 4119 3101.5 L 4127 3101.5 L 4128.5 3100 L 4133.5 3090 L 4135.5 3085.5 L 4142.5 3085.5 L 4144 3089.5 L 4150.5 3089.5 L 4152 3087.5 L 4152.5 3077.5 L 4155.5 3075.5 L 4160 3075.5 L 4163 3076.5 L 4163 3084 L 4161.5 3085.5 L 4159 3092.5 L 4144.5 3098.5 L 4144.5 3106 L 4141 3109.5 L 4128 3109.5 Z" data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge5400" data-layer="1" fill="#FF0000" fill-opacity="0.45" stroke="#FF0000" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8623" data-layer="1" points="4098,3108 4098,3110.5 4092.5,3116 4090.256,3116" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8647" data-layer="1" points="4093.925,3096.783 4094,3100.717 4093.5,3101.217 4093.5,3103.5 4090.256,3106.744 4090.256,3108.5" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8397" data-layer="1" points="4139,3081.03 4142.03,3081.03 4146.5,3085.5 4146.5,3086.35" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8632" data-layer="1" points="4091.37,3096.78 4091.5,3096.92 4091.5,3101 4088,3104.5 4086,3104.5 4084.74,3105.76 4084.74,3108.5" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8644" data-layer="1" points="4084.74,3116 4088.5,3112.5 4092.5,3112.5 4095.4,3109.6 4095.4,3101.5 4096.48,3100.42 4096.48,3096.78" fill="none" stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 4065.5 3035 L 4173.5 3035 L 4181 3042.5 L 4181 3114 L 4166 3129 L 4078 3129 L 4072 3129 L 4062 3119 L4062,3042.5 L4061,3041.5  L4060.5,3041.5 Z" data-easyeda-shape="COPPERAREA" data-easyeda-id="gge5589" data-layer="1" fill="#FF0000" fill-opacity="0.45" stroke="#FF0000" stroke-width="1"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9490" data-layer="3" points="4135.5,3041 4143,3041 4144,3042 4144,3050 4143,3051 4135.5,3051" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2686" data-layer="3" x="4159" y="3089" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.937">+</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2710" data-layer="3" x="4163.5" y="3056.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.937" transform="rotate(90 4163.5 3056.5)">-</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2722" data-layer="3" x="4152" y="3074.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.1496" transform="rotate(90 4152 3074.5)">8-35V</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2746" data-layer="3" x="4085.5" y="3104" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.5433" transform="rotate(90 4085.5 3104)">SimpleFOC</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2794" data-layer="3" x="4152" y="3050" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.5433">v1.1</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2894" data-layer="3" x="4097" y="3109.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">M1</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2906" data-layer="3" x="4107" y="3109.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">M2</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2918" data-layer="3" x="4117.5" y="3109.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">M3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge5754" data-layer="3" x="4148.5" y="3045.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.7244">Mini</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge5844" data-layer="3" x="4126.5" y="3065.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">3V3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge5868" data-layer="3" x="4088" y="3065" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">nFT</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge5880" data-layer="3" x="4096.5" y="3065" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">nSP</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge5892" data-layer="3" x="4106" y="3065.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">nRT</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge5916" data-layer="3" x="4116" y="3065" fill="#FFCC00" font-family="Arial, sans-serif" font-size="2.7559">GND</text>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge654a0509ed85acc8">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge8136" data-layer="3" x="4162.57" y="3179.88" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(90 4162.57 3179.88)">19-213/Y2C-CQ2R2L/3T(CY)</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge8142" data-layer="3" x="4151.4" y="3082.15" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(270 4151.4 3082.15)">LED1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8160" data-layer="3" points="4143.1,3089.95 4149.9,3089.95" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8163" data-layer="3" points="4149.9,3089.95 4149.9,3084.15" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8166" data-layer="3" points="4143.1,3089.95 4143.1,3084.15" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8169" data-layer="3" points="4149.9,3081.85 4149.9,3077.25" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8172" data-layer="3" points="4143.1,3081.75 4143.1,3077.25" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8175" data-layer="3" points="4143.1,3077.25 4144.5,3075.85 4148.5,3075.85 4149.9,3077.25" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8178" data-layer="3" points="4144.9,3083.3 4148,3083.3" fill="none" stroke="#FFCC00" stroke-width="0.7992" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8181" data-layer="3" points="4146.4687,3083.3 4146.4687,3082.6096" fill="none" stroke="#FFCC00" stroke-width="0.7992" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 4146.9 3085.6 L 4146.9 3088.2 L 4146.3 3088.2 L 4146.3 3085.6 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge8184" data-layer="12" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-width="0.5"/>
+<path d="M 4145.4167 3086.6833 L 4148.0167 3086.6833 L 4148.0167 3087.2833 L 4145.4167 3087.2833 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge8187" data-layer="12" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-width="0.5"/>
+<path d="M 4146.6954 3078.3018 L 4146.6954 3080.9018 L 4146.0954 3080.9018 L 4146.0954 3078.3018 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge8190" data-layer="12" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-width="0.5"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge8199" data-layer="1">
+<rect x="4144.9252" y="3084.7752" width="3.1496" height="3.1496" rx="0" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge8214" data-layer="1">
+<rect x="4144.9252" y="3078.0752" width="3.1496" height="3.1496" rx="0" fill="#FF0000"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge148a7d7e3d44fe09">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge8349" data-layer="3" x="4121.5" y="3083.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(90 4121.5 3083.5)">1kΩ</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge8232" data-layer="3" x="4135" y="3084" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(90 4135 3084)">R5</text>
+<path d="M 4137.2284 3079.2952 L 4137.2284 3082.4448 L 4137.4253 3082.6417 L 4138.3228 3082.6417 L 4138.3228 3081.185 L 4139.622 3081.185 L 4139.622 3082.6417 L 4140.5749 3082.6417 L 4140.7717 3082.4448 L 4140.7717 3079.2952 L 4140.5749 3079.0984 L 4137.4253 3079.0984 Z" data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge8250" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<path d="M 4137.4253 3085.3976 L 4138.3228 3085.3976 L 4138.3228 3086.8936 L 4139.622 3086.8936 L 4139.622 3085.3976 L 4140.5749 3085.3976 L 4140.7717 3085.5944 L 4140.7717 3088.7046 L 4140.5749 3088.9015 L 4137.4253 3088.9015 L 4137.2284 3088.7046 L 4137.2284 3085.5944 Z" data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge8253" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8256" data-layer="3" points="4141.6008,3082.322 4141.6008,3078.5469 4136.3992,3078.5469 4136.3992,3082.322" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8259" data-layer="3" points="4141.6008,3085.678 4141.6008,3089.4531 4136.3992,3089.4531 4136.3992,3085.678" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge8268" data-layer="1">
+<rect x="4137.41245" y="3079.3332" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(90 4139 3081.034)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge8283" data-layer="1">
+<rect x="4137.41245" y="3085.2652" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(90 4139 3086.966)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge5ae6fc5c0247e226">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6301" data-layer="3" x="4145" y="3082.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">100uF</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge6307" data-layer="3" x="4145" y="3089.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">C3</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge6325" data-layer="3" points="4158.2111,3107.4105 4158.29,3117.79 4137.2,3117.79 4131.71,3112.3 4131.7626,3107.2" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge6328" data-layer="3" points="4158.2657,3101.7138 4158.292,3091.208 4137.2046,3091.208 4131.708,3096.7046 4131.708,3101.8" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 4157.2126 3110.0866 L 4157.2126 3110.8661 L 4154.0945 3110.8661 L 4154.0945 3110.0866 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge6331" data-layer="3" fill="#FFCC00" fill-opacity="0.45" stroke="#FFCC00" stroke-width="0.5"/>
+<path d="M 4132.7874 3110.0866 L 4132.7874 3110.8661 L 4135.9055 3110.8661 L 4135.9055 3110.0866 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge6334" data-layer="3" fill="#FFCC00" fill-opacity="0.45" stroke="#FFCC00" stroke-width="0.5"/>
+<path d="M 4133.9567 3107.878 L 4133.9567 3113.0748 L 4134.7362 3113.0748 L 4134.7362 3107.878 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge6337" data-layer="3" fill="#FFCC00" fill-opacity="0.45" stroke="#FFCC00" stroke-width="0.5"/>
+<path d="M 4157.2126 3104.1102 L 4157.2126 3104.8898 L 4154.0945 3104.8898 L 4154.0945 3104.1102 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge6340" data-layer="12" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-width="0.5"/>
+<path d="M 4132.7874 3104.1102 L 4132.7874 3104.8898 L 4135.9055 3104.8898 L 4135.9055 3104.1102 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge6343" data-layer="12" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-width="0.5"/>
+<path d="M 4133.937 3101.9016 L 4133.937 3107.0984 L 4134.7165 3107.0984 L 4134.7165 3101.9016 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge6346" data-layer="12" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-width="0.5"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge6355" data-layer="1">
+<rect x="4127.59825" y="3102.1378" width="13.7795" height="4.7244" rx="0" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge6370" data-layer="1">
+<rect x="4148.62225" y="3102.1378" width="13.7795" height="4.7244" rx="0" fill="#FF0000"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge6c3ff85059447501">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2964" data-layer="3" x="3992.05" y="3072.56" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">Female header2.54mm2*5p Straight</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge2970" data-layer="3" x="4109.5" y="3062" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(180 4109.5 3062)">H1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3012" data-layer="3" points="4135.5,3061 4083.5,3061 4083.5,3041 4135.5,3041 4135.5,3061" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3015" data-layer="3" points="4135.5,3051 4124.5,3051 4124.5,3041 4135.5,3041 4135.5,3051" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3024" data-layer="11">
+<ellipse cx="4089.5" cy="3056" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4089.5 3056)"/>
+<circle cx="4089.5" cy="3056" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3039" data-layer="11">
+<ellipse cx="4089.5" cy="3046" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4089.5 3046)"/>
+<circle cx="4089.5" cy="3046" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3054" data-layer="11">
+<ellipse cx="4099.5" cy="3056" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4099.5 3056)"/>
+<circle cx="4099.5" cy="3056" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3069" data-layer="11">
+<ellipse cx="4099.5" cy="3046" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4099.5 3046)"/>
+<circle cx="4099.5" cy="3046" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3084" data-layer="11">
+<ellipse cx="4109.5" cy="3056" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4109.5 3056)"/>
+<circle cx="4109.5" cy="3056" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3099" data-layer="11">
+<ellipse cx="4109.5" cy="3046" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4109.5 3046)"/>
+<circle cx="4109.5" cy="3046" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3114" data-layer="11">
+<ellipse cx="4119.5" cy="3056" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4119.5 3056)"/>
+<circle cx="4119.5" cy="3056" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3129" data-layer="11">
+<ellipse cx="4119.5" cy="3046" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4119.5 3046)"/>
+<circle cx="4119.5" cy="3046" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3144" data-layer="11">
+<ellipse cx="4129.5" cy="3056" rx="3.34645" ry="3.34645" fill="#C0C0C0" transform="rotate(180 4129.5 3056)"/>
+<circle cx="4129.5" cy="3056" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3159" data-layer="11">
+<ellipse cx="4129.5" cy="3046" rx="3.1" ry="3.1" fill="#C0C0C0" transform="rotate(180 4129.5 3046)"/>
+<circle cx="4129.5" cy="3046" r="2.1654" fill="#111111"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="ggeaae50cdc766804b1">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3456" data-layer="3" x="4132.35" y="3076.68" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">10kΩ</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3177" data-layer="3" x="4142" y="3052.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(180 4142 3052.5)">R1</text>
+<path d="M 4137.2952 3057.7716 L 4140.4448 3057.7716 L 4140.6417 3057.5747 L 4140.6417 3056.6772 L 4139.185 3056.6772 L 4139.185 3055.378 L 4140.6417 3055.378 L 4140.6417 3054.4251 L 4140.4448 3054.2283 L 4137.2952 3054.2283 L 4137.0984 3054.4251 L 4137.0984 3057.5747 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3195" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<path d="M 4143.3976 3057.5747 L 4143.3976 3056.6772 L 4144.8936 3056.6772 L 4144.8936 3055.378 L 4143.3976 3055.378 L 4143.3976 3054.4251 L 4143.5944 3054.2283 L 4146.7046 3054.2283 L 4146.9015 3054.4251 L 4146.9015 3057.5747 L 4146.7046 3057.7716 L 4143.5944 3057.7716 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3198" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3201" data-layer="3" points="4140.322,3053.3992 4136.5469,3053.3992 4136.5469,3058.6008 4140.322,3058.6008" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3204" data-layer="3" points="4143.678,3053.3992 4147.4531,3053.3992 4147.4531,3058.6008 4143.678,3058.6008" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3213" data-layer="1">
+<rect x="4137.44645" y="3054.2992" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(180 4139.034 3056)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3228" data-layer="1">
+<rect x="4143.37845" y="3054.2992" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(180 4144.966 3056)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="ggec613857197974b01">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3450" data-layer="3" x="4131.606" y="3083.775" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">10kΩ</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3246" data-layer="3" x="4142" y="3067" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(180 4142 3067)">R2</text>
+<path d="M 4137.2952 3064.7716 L 4140.4448 3064.7716 L 4140.6417 3064.5747 L 4140.6417 3063.6772 L 4139.185 3063.6772 L 4139.185 3062.378 L 4140.6417 3062.378 L 4140.6417 3061.4251 L 4140.4448 3061.2283 L 4137.2952 3061.2283 L 4137.0984 3061.4251 L 4137.0984 3064.5747 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3264" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<path d="M 4143.3976 3064.5747 L 4143.3976 3063.6772 L 4144.8936 3063.6772 L 4144.8936 3062.378 L 4143.3976 3062.378 L 4143.3976 3061.4251 L 4143.5944 3061.2283 L 4146.7046 3061.2283 L 4146.9015 3061.4251 L 4146.9015 3064.5747 L 4146.7046 3064.7716 L 4143.5944 3064.7716 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3267" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3270" data-layer="3" points="4140.322,3060.3992 4136.5469,3060.3992 4136.5469,3065.6008 4140.322,3065.6008" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3273" data-layer="3" points="4143.678,3060.3992 4147.4531,3060.3992 4147.4531,3065.6008 4143.678,3065.6008" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3282" data-layer="1">
+<rect x="4137.44645" y="3061.2992" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(180 4139.034 3063)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3297" data-layer="1">
+<rect x="4143.37845" y="3061.2992" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(180 4144.966 3063)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge96355edf47ab4de2">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3453" data-layer="3" x="4131.35" y="3090.18" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">10kΩ</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3315" data-layer="3" x="4143.5" y="3059" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(180 4143.5 3059)">R3</text>
+<path d="M 4137.2952 3071.2716 L 4140.4448 3071.2716 L 4140.6417 3071.0747 L 4140.6417 3070.1772 L 4139.185 3070.1772 L 4139.185 3068.878 L 4140.6417 3068.878 L 4140.6417 3067.9251 L 4140.4448 3067.7283 L 4137.2952 3067.7283 L 4137.0984 3067.9251 L 4137.0984 3071.0747 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3333" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<path d="M 4143.3976 3071.0747 L 4143.3976 3070.1772 L 4144.8936 3070.1772 L 4144.8936 3068.878 L 4143.3976 3068.878 L 4143.3976 3067.9251 L 4143.5944 3067.7283 L 4146.7046 3067.7283 L 4146.9015 3067.9251 L 4146.9015 3071.0747 L 4146.7046 3071.2716 L 4143.5944 3071.2716 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3336" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3339" data-layer="3" points="4140.322,3066.8992 4136.5469,3066.8992 4136.5469,3072.1008 4140.322,3072.1008" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3342" data-layer="3" points="4143.678,3066.8992 4147.4531,3066.8992 4147.4531,3072.1008 4143.678,3072.1008" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3351" data-layer="1">
+<rect x="4137.44645" y="3067.7992" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(180 4139.034 3069.5)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3366" data-layer="1">
+<rect x="4143.37845" y="3067.7992" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(180 4144.966 3069.5)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="ggee03f491cb2c5bef7">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3459" data-layer="3" x="4102.5" y="3071.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(270 4102.5 3071.5)">10kΩ</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge3384" data-layer="3" x="4104.29" y="3077.78" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(90 4104.29 3077.78)">R4</text>
+<path d="M 4086.7716 3075.7048 L 4086.7716 3072.5552 L 4086.5747 3072.3583 L 4085.6772 3072.3583 L 4085.6772 3073.815 L 4084.378 3073.815 L 4084.378 3072.3583 L 4083.4251 3072.3583 L 4083.2283 3072.5552 L 4083.2283 3075.7048 L 4083.4251 3075.9016 L 4086.5747 3075.9016 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3402" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<path d="M 4086.5747 3069.6024 L 4085.6772 3069.6024 L 4085.6772 3068.1064 L 4084.378 3068.1064 L 4084.378 3069.6024 L 4083.4251 3069.6024 L 4083.2283 3069.4056 L 4083.2283 3066.2954 L 4083.4251 3066.0985 L 4086.5747 3066.0985 L 4086.7716 3066.2954 L 4086.7716 3069.4056 Z " data-easyeda-shape="SOLIDREGION" data-easyeda-id="gge3405" data-layer="5" fill="#808080" fill-opacity="0.45" stroke="#808080" stroke-width="0.5"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3408" data-layer="3" points="4082.3992,3072.678 4082.3992,3076.4531 4087.6008,3076.4531 4087.6008,3072.678" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge3411" data-layer="3" points="4082.3992,3069.322 4082.3992,3065.5469 4087.6008,3065.5469 4087.6008,3069.322" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3420" data-layer="1">
+<rect x="4083.41245" y="3072.2652" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(270 4085 3073.966)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge3435" data-layer="1">
+<rect x="4083.41245" y="3066.3332" width="3.1751" height="3.4016" rx="0" fill="#FF0000" transform="rotate(270 4085 3068.034)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge5910d07f8d452266">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge9" data-layer="3" x="4071.44" y="3124.29" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">100nF</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge15" data-layer="3" x="4080" y="3104" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.937" transform="rotate(180 4080 3104)">C1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge33" data-layer="3" points="4082.0275,3110.0739 4082.0275,3106.9242" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge36" data-layer="3" points="4086.3966,3111.2938 4083.2471,3111.2938" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge39" data-layer="3" points="4086.3966,3105.7046 4083.2471,3105.7046" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge42" data-layer="3" points="4088.6639,3111.3167 4091.8135,3111.3167" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge45" data-layer="3" points="4093.0333,3110.0969 4093.0333,3106.9474" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge48" data-layer="3" points="4088.6639,3105.7277 4091.8135,3105.7277" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge51" data-layer="3" d="M 4093.0335 3110.0969 A 1.2198 1.2198 0 0 1 4091.8137 3111.3167" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge54" data-layer="3" d="M 4091.8137 3105.7275 A 1.2198 1.2198 0 0 1 4093.0335 3106.9474" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge57" data-layer="3" d="M 4083.2473 3111.2938 A 1.2198 1.2198 0 0 1 4082.0275 3110.0739" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge60" data-layer="3" d="M 4082.0275 3106.9244 A 1.2198 1.2198 0 0 1 4083.2473 3105.7046" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge69" data-layer="1">
+<rect x="4083.1692" y="3106.72835" width="3.1496" height="3.5433" rx="0" fill="#FF0000" transform="rotate(180 4084.744 3108.5)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge84" data-layer="1">
+<rect x="4088.6812" y="3106.72835" width="3.1496" height="3.5433" rx="0" fill="#FF0000" transform="rotate(180 4090.256 3108.5)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gged29d599c159262a3">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge105" data-layer="3" x="4071.44" y="3131.79" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">100nF</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge111" data-layer="3" x="4087" y="3108" fill="#FFCC00" font-family="Arial, sans-serif" font-size="3.937" transform="rotate(180 4087 3108)">C2</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge129" data-layer="3" points="4082.0275,3117.5739 4082.0275,3114.4242" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge132" data-layer="3" points="4086.3966,3118.7938 4083.2471,3118.7938" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge135" data-layer="3" points="4086.3966,3113.2046 4083.2471,3113.2046" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge138" data-layer="3" points="4088.6639,3118.8167 4091.8135,3118.8167" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge141" data-layer="3" points="4093.0333,3117.5969 4093.0333,3114.4474" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge144" data-layer="3" points="4088.6639,3113.2277 4091.8135,3113.2277" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge147" data-layer="3" d="M 4093.0335 3117.5969 A 1.2198 1.2198 0 0 1 4091.8137 3118.8167" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge150" data-layer="3" d="M 4091.8137 3113.2275 A 1.2198 1.2198 0 0 1 4093.0335 3114.4474" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge153" data-layer="3" d="M 4083.2473 3118.7938 A 1.2198 1.2198 0 0 1 4082.0275 3117.5739" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge156" data-layer="3" d="M 4082.0275 3114.4244 A 1.2198 1.2198 0 0 1 4083.2473 3113.2046" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge165" data-layer="1">
+<rect x="4083.1692" y="3114.22835" width="3.1496" height="3.5433" rx="0" fill="#FF0000" transform="rotate(180 4084.744 3116)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge180" data-layer="1">
+<rect x="4088.6812" y="3114.22835" width="3.1496" height="3.5433" rx="0" fill="#FF0000" transform="rotate(180 4090.256 3116)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge4e9e02d73735e13b">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge201" data-layer="3" x="4120.172" y="3077.63" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(90 4120.172 3077.63)">470nF</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge207" data-layer="3" x="4123.5" y="3062" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(90 4123.5 3062)">C4</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge225" data-layer="3" points="4129.9261,3071.0275 4133.0758,3071.0275" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge228" data-layer="3" points="4128.7062,3075.3966 4128.7062,3072.2471" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge231" data-layer="3" points="4134.2954,3075.3966 4134.2954,3072.2471" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge234" data-layer="3" points="4128.6833,3077.6639 4128.6833,3080.8135" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge237" data-layer="3" points="4129.9031,3082.0333 4133.0526,3082.0333" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge240" data-layer="3" points="4134.2723,3077.6639 4134.2723,3080.8135" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge243" data-layer="3" d="M 4129.9031 3082.0335 A 1.2198 1.2198 0 0 1 4128.6833 3080.8137" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge246" data-layer="3" d="M 4134.2725 3080.8137 A 1.2198 1.2198 0 0 1 4133.0526 3082.0335" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge249" data-layer="3" d="M 4128.7062 3072.2473 A 1.2198 1.2198 0 0 1 4129.9261 3071.0275" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge252" data-layer="3" d="M 4133.0756 3071.0275 A 1.2198 1.2198 0 0 1 4134.2954 3072.2473" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge261" data-layer="1">
+<rect x="4129.9252" y="3071.97235" width="3.1496" height="3.5433" rx="0" fill="#FF0000" transform="rotate(90 4131.5 3073.744)"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge276" data-layer="1">
+<rect x="4129.9252" y="3077.48435" width="3.1496" height="3.5433" rx="0" fill="#FF0000" transform="rotate(90 4131.5 3079.256)"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge3c124720e6bcc20e">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge477" data-layer="3" x="4026.92" y="3131.85" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">Header-Female-2.54_1x3</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge483" data-layer="3" x="4111" y="3122" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5" transform="rotate(180 4111 3122)">P1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge495" data-layer="3" points="4124.5,3120.5 4094.5,3120.5 4094.5,3110.5" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge498" data-layer="3" points="4124.5,3110.5 4094.5,3110.5" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge501" data-layer="3" points="4124.5,3120.5 4124.5,3110.5" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge504" data-layer="3" points="4114.3093,3120.5 4114.3093,3110.5" fill="none" stroke="#FFCC00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge522" data-layer="11">
+<ellipse cx="4099.5" cy="3115.5" rx="3.1" ry="3.1" fill="#C0C0C0" transform="rotate(180 4099.5 3115.5)"/>
+<circle cx="4099.5" cy="3115.5" r="2.0079" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge537" data-layer="11">
+<ellipse cx="4109.5" cy="3115.5" rx="3.1" ry="3.1" fill="#C0C0C0" transform="rotate(180 4109.5 3115.5)"/>
+<circle cx="4109.5" cy="3115.5" r="2.0079" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge552" data-layer="11">
+<rect x="4116.4" y="3112.4" width="6.2" height="6.2" rx="0" fill="#C0C0C0" transform="rotate(180 4119.5 3115.5)"/>
+<circle cx="4119.5" cy="3115.5" r="2.0079" fill="#111111"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge0f6d890efb672f83">
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge588" data-layer="12" cx="4091.366" cy="3099.673" r="0.591" fill="none" stroke="#FFFFFF" stroke-width="1.1811"/>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge573" data-layer="3" x="4107" y="3061.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">DRV8313PWPR</text>
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge579" data-layer="3" x="4107" y="3068.5" fill="#FFCC00" font-family="Arial, sans-serif" font-size="4.5">U1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge594" data-layer="3" points="4088.6055,3092.4735 4088.6055,3078.5255 4127.3945,3078.5255 4127.3945,3092.4735 4088.6055,3092.4735" fill="none" stroke="#FFCC00" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge597" data-layer="3" cx="4091.366" cy="3089.512" r="0.591" fill="none" stroke="#FFCC00" stroke-width="1.1811"/>
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge600" data-layer="3" cx="4088.91" cy="3096.783" r="0.591" fill="none" stroke="#FFCC00" stroke-width="1.1811"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge780" data-layer="1">
+<rect x="4090.6908" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge795" data-layer="1">
+<rect x="4093.2498" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge810" data-layer="1">
+<rect x="4095.8088" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge825" data-layer="1">
+<rect x="4098.3678" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge840" data-layer="1">
+<rect x="4100.9268" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge855" data-layer="1">
+<rect x="4103.4858" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge870" data-layer="1">
+<rect x="4106.0458" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge885" data-layer="1">
+<rect x="4108.6048" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge900" data-layer="1">
+<rect x="4111.1638" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge915" data-layer="1">
+<rect x="4113.7228" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge930" data-layer="1">
+<rect x="4116.2818" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge945" data-layer="1">
+<rect x="4118.8408" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge960" data-layer="1">
+<rect x="4121.3998" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge975" data-layer="1">
+<rect x="4123.9588" y="3093.37455" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge990" data-layer="1">
+<rect x="4090.6908" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1005" data-layer="1">
+<rect x="4093.2498" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1020" data-layer="1">
+<rect x="4095.8088" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1035" data-layer="1">
+<rect x="4098.3678" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1050" data-layer="1">
+<rect x="4100.9268" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1065" data-layer="1">
+<rect x="4103.4858" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1080" data-layer="1">
+<rect x="4106.0458" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1095" data-layer="1">
+<rect x="4108.6048" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1110" data-layer="1">
+<rect x="4111.1638" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1125" data-layer="1">
+<rect x="4113.7228" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1140" data-layer="1">
+<rect x="4116.2818" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1155" data-layer="1">
+<rect x="4118.8408" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1170" data-layer="1">
+<rect x="4121.3998" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1185" data-layer="1">
+<rect x="4123.9588" y="3070.80955" width="1.3504" height="6.8169" rx="0.6752" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge1200" data-layer="1">
+<rect x="4095.7953" y="3080.0866" width="24.4094" height="10.8268" rx="0" fill="#FF0000"/>
+</g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1215"><circle cx="4102.095" cy="3087.469" r="1.1811" fill="#c0c0c0"/><circle cx="4102.095" cy="3087.469" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1224"><circle cx="4102.095" cy="3083.532" r="1.1811" fill="#c0c0c0"/><circle cx="4102.095" cy="3083.532" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1233"><circle cx="4106.032" cy="3087.469" r="1.1811" fill="#c0c0c0"/><circle cx="4106.032" cy="3087.469" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1242"><circle cx="4106.032" cy="3083.532" r="1.1811" fill="#c0c0c0"/><circle cx="4106.032" cy="3083.532" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1251"><circle cx="4109.969" cy="3087.469" r="1.1811" fill="#c0c0c0"/><circle cx="4109.969" cy="3087.469" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1260"><circle cx="4109.969" cy="3083.532" r="1.1811" fill="#c0c0c0"/><circle cx="4109.969" cy="3083.532" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1269"><circle cx="4113.906" cy="3087.469" r="1.1811" fill="#c0c0c0"/><circle cx="4113.906" cy="3087.469" r="0.5906" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1278"><circle cx="4113.906" cy="3083.532" r="1.1811" fill="#c0c0c0"/><circle cx="4113.906" cy="3083.532" r="0.5906" fill="#111111"/></g>
+</g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1920"><circle cx="4099.5" cy="3103" r="1.2" fill="#c0c0c0"/><circle cx="4099.5" cy="3103" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge1974"><circle cx="4098" cy="3108" r="1.2" fill="#c0c0c0"/><circle cx="4098" cy="3108" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge2002"><circle cx="4101.5" cy="3105" r="1.2" fill="#c0c0c0"/><circle cx="4101.5" cy="3105" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge2086"><circle cx="4123.5" cy="3103" r="1.2" fill="#c0c0c0"/><circle cx="4123.5" cy="3103" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge2098"><circle cx="4123.5" cy="3105.5" r="1.2" fill="#c0c0c0"/><circle cx="4123.5" cy="3105.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge2110"><circle cx="4119.5" cy="3103" r="1.2" fill="#c0c0c0"/><circle cx="4119.5" cy="3103" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge2122"><circle cx="4119.5" cy="3105.5" r="1.2" fill="#c0c0c0"/><circle cx="4119.5" cy="3105.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge2825"><circle cx="4098" cy="3105" r="1.2" fill="#c0c0c0"/><circle cx="4098" cy="3105" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge4518"><circle cx="4101.5" cy="3067.5" r="1.2" fill="#c0c0c0"/><circle cx="4101.5" cy="3067.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge4570"><circle cx="4107" cy="3067.5" r="1.2" fill="#c0c0c0"/><circle cx="4107" cy="3067.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge4628"><circle cx="4094.5" cy="3067.5" r="1.2" fill="#c0c0c0"/><circle cx="4094.5" cy="3067.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge4718"><circle cx="4115.5" cy="3067" r="1.2" fill="#c0c0c0"/><circle cx="4115.5" cy="3067" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge4731"><circle cx="4119.5" cy="3067" r="1.2" fill="#c0c0c0"/><circle cx="4119.5" cy="3067" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge4826"><circle cx="4125.5" cy="3067.5" r="1.2" fill="#c0c0c0"/><circle cx="4125.5" cy="3067.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge5124" data-layer="11">
+<rect x="4154.65355" y="3056.07875" width="6.6929" height="9.8425" rx="3.34645" fill="#C0C0C0" transform="rotate(90 4158 3061)"/>
+<circle cx="4158" cy="3061" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge5154" data-layer="11">
+<rect x="4154.65355" y="3075.57875" width="6.6929" height="9.8425" rx="3.34645" fill="#C0C0C0" transform="rotate(90 4158 3080.5)"/>
+<circle cx="4158" cy="3080.5" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge5250" data-layer="11">
+<ellipse cx="4165.5" cy="3114" rx="3.937" ry="3.937" fill="#C0C0C0" transform="rotate(180 4165.5 3114)"/>
+<circle cx="4165.5" cy="3114" r="3.937" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge5325" data-layer="11">
+<ellipse cx="4076.5" cy="3045" rx="3.937" ry="3.937" fill="#C0C0C0" transform="rotate(180 4076.5 3045)"/>
+<circle cx="4076.5" cy="3045" r="3.937" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge5349" data-layer="11">
+<ellipse cx="4076.5" cy="3114.5" rx="3.937" ry="3.937" fill="#C0C0C0" transform="rotate(180 4076.5 3114.5)"/>
+<circle cx="4076.5" cy="3114.5" r="3.937" fill="#111111"/>
+</g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge6538"><circle cx="4157.5" cy="3055" r="1.2" fill="#c0c0c0"/><circle cx="4157.5" cy="3055" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge6550"><circle cx="4152.5" cy="3112" r="1.2" fill="#c0c0c0"/><circle cx="4152.5" cy="3112" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge6562"><circle cx="4156.5" cy="3096.5" r="1.2" fill="#c0c0c0"/><circle cx="4156.5" cy="3096.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge7089"><circle cx="4085" cy="3080" r="1.2" fill="#c0c0c0"/><circle cx="4085" cy="3080" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge7437" data-layer="11">
+<ellipse cx="4165.5" cy="3045.5" rx="3.937" ry="3.937" fill="#C0C0C0" transform="rotate(180 4165.5 3045.5)"/>
+<circle cx="4165.5" cy="3045.5" r="3.937" fill="#111111"/>
+</g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8025"><circle cx="4150.5" cy="3099" r="1.2" fill="#c0c0c0"/><circle cx="4150.5" cy="3099" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8052"><circle cx="4156.5" cy="3115.5" r="1.2" fill="#c0c0c0"/><circle cx="4156.5" cy="3115.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8067"><circle cx="4160" cy="3094" r="1.2" fill="#c0c0c0"/><circle cx="4160" cy="3094" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8082"><circle cx="4160.5" cy="3099" r="1.2" fill="#c0c0c0"/><circle cx="4160.5" cy="3099" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8109"><circle cx="4148" cy="3115.5" r="1.2" fill="#c0c0c0"/><circle cx="4148" cy="3115.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8418"><circle cx="4149.5" cy="3050.5" r="1.2" fill="#c0c0c0"/><circle cx="4149.5" cy="3050.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8430"><circle cx="4156.5" cy="3070" r="1.2" fill="#c0c0c0"/><circle cx="4156.5" cy="3070" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8472"><circle cx="4086.5" cy="3092" r="1.2" fill="#c0c0c0"/><circle cx="4086.5" cy="3092" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8568"><circle cx="4131" cy="3085" r="1.2" fill="#c0c0c0"/><circle cx="4131" cy="3085" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8825"><circle cx="4144.5" cy="3112.5" r="1.2" fill="#c0c0c0"/><circle cx="4144.5" cy="3112.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge8837"><circle cx="4140.5" cy="3116.5" r="1.2" fill="#c0c0c0"/><circle cx="4140.5" cy="3116.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9072"><circle cx="4086" cy="3063.5" r="1.2" fill="#c0c0c0"/><circle cx="4086" cy="3063.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9198"><circle cx="4092" cy="3064.5" r="1.2" fill="#c0c0c0"/><circle cx="4092" cy="3064.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9312"><circle cx="4130.5" cy="3116" r="1.2" fill="#c0c0c0"/><circle cx="4130.5" cy="3116" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge9415" data-layer="11">
+<ellipse cx="4139.5" cy="3046" rx="3.1" ry="3.1" fill="#C0C0C0" transform="rotate(180 4139.5 3046)"/>
+<circle cx="4139.5" cy="3046" r="2.1654" fill="#111111"/>
+</g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9727"><circle cx="4156.5" cy="3044.5" r="1.2" fill="#c0c0c0"/><circle cx="4156.5" cy="3044.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9742"><circle cx="4081" cy="3094" r="1.2" fill="#c0c0c0"/><circle cx="4081" cy="3094" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9757"><circle cx="4147" cy="3075" r="1.2" fill="#c0c0c0"/><circle cx="4147" cy="3075" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9772"><circle cx="4150.5" cy="3058" r="1.2" fill="#c0c0c0"/><circle cx="4150.5" cy="3058" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9799"><circle cx="4130" cy="3090.5" r="1.2" fill="#c0c0c0"/><circle cx="4130" cy="3090.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9835"><circle cx="4141" cy="3094.5" r="1.2" fill="#c0c0c0"/><circle cx="4141" cy="3094.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9850"><circle cx="4136" cy="3094.5" r="1.2" fill="#c0c0c0"/><circle cx="4136" cy="3094.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9865"><circle cx="4142.5" cy="3097.5" r="1.2" fill="#c0c0c0"/><circle cx="4142.5" cy="3097.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9880"><circle cx="4138" cy="3097.5" r="1.2" fill="#c0c0c0"/><circle cx="4138" cy="3097.5" r="0.6" fill="#111111"/></g>
+<g data-easyeda-shape="VIA" data-easyeda-id="gge9904"><circle cx="4102" cy="3108" r="1.2" fill="#c0c0c0"/><circle cx="4102" cy="3108" r="0.6" fill="#111111"/></g>
+</g>
+</svg>

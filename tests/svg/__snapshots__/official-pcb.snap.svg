@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="234.666667" viewBox="95 95 150 110" role="img" aria-label="Official EasyEDA Standard PCB" class="easyeda-document easyeda-pcb" data-renderer="easyedats">
+<title>Official EasyEDA Standard PCB</title>
+<rect class="easyeda-background" x="95" y="95" width="150" height="110" fill="#000000"/>
+<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge43" data-layer="10" points="110,100 240,100 240,200 100,200 100,110" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge69" data-layer="2" points="127.5,150 127.5,127.5 140,115 205,115 210,120 215,125 215,135" fill="none" stroke="#0000FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge44" data-layer="10" d="M100 110A10 10 0 0 1 110 100" fill="none" stroke="#FF00FF" stroke-width="1" stroke-linecap="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge70" data-layer="1" points="225,135 230,140 230.24,140.24 230.24,170" fill="none" stroke="#FF0000" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge71" data-layer="1" points="199.76,170 187.5,170" fill="none" stroke="#FF0000" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge2">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge4" data-layer="3" x="155" y="130" fill="#FFFF00" font-family="Arial, sans-serif" font-size="4.5">V1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge5" data-layer="3" points="152.5,140 152.5,150" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge6" data-layer="3" points="140,150 147.5,150" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge7" data-layer="3" points="152.5,150 160,150" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge8" data-layer="3" points="152.5,150 152.5,160" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge9" data-layer="3" points="155,162.5 160,162.5" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge10" data-layer="3" points="157.5,160 157.5,165" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge11" data-layer="11">
+<rect x="122.485" y="147.215" width="10.03" height="5.57" rx="0" fill="#C0C0C0"/>
+<circle cx="127.5" cy="150" r="2" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge12" data-layer="11">
+<rect x="182.485" y="167.215" width="10.03" height="5.57" rx="0" fill="#C0C0C0"/>
+<circle cx="187.5" cy="170" r="2" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge13" data-layer="11">
+<rect x="182.485" y="127.215" width="10.03" height="5.57" rx="0" fill="#C0C0C0"/>
+<circle cx="187.5" cy="130" r="2" fill="#111111"/>
+</g>
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge14" data-layer="3" cx="150" cy="150" r="45" fill="none" stroke="#FFFF00" stroke-width="1"/>
+<circle data-easyeda-shape="CIRCLE" data-easyeda-id="gge15" data-layer="3" cx="150" cy="150" r="40.3" fill="none" stroke="#FFFF00" stroke-width="1"/>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge16">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge18" data-layer="3" x="211" y="181.06" fill="#FFFF00" font-family="Arial, sans-serif" font-size="4.5">R2</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge19" data-layer="3" points="230.24,170 228.21,170" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge20" data-layer="3" points="199.76,170 201.79,170" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge21" data-layer="3" points="201.79,170 201.79,174.06" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge22" data-layer="3" points="201.79,174.06 228.21,174.06" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge23" data-layer="3" points="228.21,174.06 228.21,165.94" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge24" data-layer="3" points="228.21,165.94 201.79,165.94" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge25" data-layer="3" points="201.79,165.94 201.79,170" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge26" data-layer="3" points="228.21,172.03 226.18,174.06" fill="none" stroke="#FFFF00" stroke-width="0.8128" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge27" data-layer="11">
+<ellipse cx="230.24" cy="170" rx="2.795" ry="2.795" fill="#C0C0C0" transform="rotate(180 230.24 170)"/>
+<circle cx="230.24" cy="170" r="1.63" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge28" data-layer="11">
+<ellipse cx="199.76" cy="170" rx="2.795" ry="2.795" fill="#C0C0C0" transform="rotate(180 199.76 170)"/>
+<circle cx="199.76" cy="170" r="1.63" fill="#111111"/>
+</g>
+</g>
+<g data-easyeda-shape="LIB" data-easyeda-id="gge29">
+<text data-easyeda-shape="TEXT" data-easyeda-id="gge31" data-layer="3" x="218" y="122" fill="#FFFF00" font-family="Arial, sans-serif" font-size="4.5">D1</text>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge32" data-layer="12" points="213.8,130 213.8,140" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge33" data-layer="3" points="213.8,140.1 213.8,138.1" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline data-easyeda-shape="TRACK" data-easyeda-id="gge34" data-layer="3" points="213.8,129.9 213.8,131.7" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge35" data-layer="11">
+<ellipse cx="225" cy="135" rx="3.7" ry="3.7" fill="#C0C0C0" transform="rotate(180 225 135)"/>
+<circle cx="225" cy="135" r="1.6" fill="#111111"/>
+</g>
+<g data-easyeda-shape="PAD" data-easyeda-id="gge36" data-layer="11">
+<ellipse cx="215" cy="135" rx="3.7" ry="3.7" fill="#C0C0C0" transform="rotate(180 215 135)"/>
+<circle cx="215" cy="135" r="1.6" fill="#111111"/>
+</g>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge37" data-layer="3" d="M220,143 A7.99998,7.99998 -0 0,1 213.854,140.122" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge38" data-layer="3" d="M227.059,138.765 A7.99998,7.99998 -0 0,1 220,143" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge39" data-layer="3" d="M220,127 A7.99998,7.99998 -0 0,0 213.893,129.832" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge40" data-layer="3" d="M226.946,131.031 A7.99998,7.99998 -0 0,0 220,127" fill="none" stroke="#FFFF00" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge41" data-layer="12" d="M228,135 A7.99998,7.99998 -0 0,1 227.044,138.793" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+<path data-easyeda-shape="ARC" data-easyeda-id="gge42" data-layer="12" d="M228,135 A7.99998,7.99998 -0 0,0 226.813,130.807" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

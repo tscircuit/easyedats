@@ -1,12 +1,16 @@
 # easyedats
 
-TypeScript-first parser and serializer for EasyEDA source files.
+TypeScript-first parser, serializer, and SVG renderer for EasyEDA source files.
 
 The first release targets the open ASCII format exported by **EasyEDA
 Standard**: a JSON document whose `head`, `canvas`, `layers`, and `shape`
 records use compact `~`-delimited strings. It supports both schematic and PCB
 documents, parses known shape commands into classes, and preserves unknown
 commands and top-level properties so files remain round-trippable.
+
+Both legacy exports with a compact string `head` and modern Standard exports
+with an object `head` are supported. Multi-sheet schematic bundles
+(`docType: 5`) parse as `EasyEdaSchematicList` roots.
 
 EasyEDA Pro uses a separate archive and multi-file format. Pro support is not
 claimed yet; it can be added under a separate module without changing the
@@ -46,6 +50,21 @@ const updatedSource = pcb.getString()
 `getString()` returns the original bytes when nothing changed. After a
 mutation it emits deterministic two-space JSON while retaining unknown data.
 
+## Generate SVG
+
+```ts
+import { parseEasyEdaSource, renderEasyEdaSvg } from "easyedats"
+
+const document = parseEasyEdaSource(source)
+const svg = renderEasyEdaSvg(document, {
+  title: "Motor controller",
+})
+```
+
+`renderEasyEdaSvg()` produces deterministic, standalone SVG for schematics,
+PCB layouts, symbols, and footprints. For a schematic list it renders the
+first sheet by default; pass `schematicIndex` to select another sheet.
+
 ## API shape
 
 - `parseEasyEdaSource(source)` selects a schematic, schematic-symbol, PCB,
@@ -54,6 +73,10 @@ mutation it emits deterministic two-space JSON while retaining unknown data.
   expected root type.
 - `parseEasyEdaSchematicSymbol(source)` and
   `parseEasyEdaPcbFootprint(source)` cover Standard library documents.
+- `parseEasyEdaSchematicList(source)` parses modern multi-sheet schematic
+  exports and exposes their documents through `list.sheets`.
+- `renderEasyEdaSvg(document, options)` and its
+  `serializeEasyEdaToSvg` alias render parsed geometry.
 - `EasyEdaDocument#getChildren()` exposes the head, canvas, layers, and shapes
   for generic tree walking.
 - Registered shape classes expose typed accessors for common fields.
@@ -65,13 +88,24 @@ mutation it emits deterministic two-space JSON while retaining unknown data.
 
 ```sh
 bun install
+bun run download-references
 bun test
 bun run typecheck
 bun run format:check
 ```
 
-The canonical fixtures are the schematic and PCB examples linked from the
+The small canonical fixtures are the schematic and PCB examples linked from the
 [EasyEDA Standard format documentation](https://docs.easyeda.com/en/DocumentFormat/1-Common-Information/index.html).
+The complete suite also downloads hash-verified, MIT-licensed SimpleFOCMini
+schematic and PCB exports from an immutable Git commit. Those third-party JSON
+files remain gitignored; their committed `.snap.svg` baselines make visual
+changes reviewable.
+
+Update the SVG baselines intentionally with:
+
+```sh
+bun run test:update-svg
+```
 
 ## Format notes
 
