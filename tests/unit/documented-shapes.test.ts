@@ -70,17 +70,50 @@ test("mutates and serializes every documented Standard shape entity", () => {
   }
 })
 
-test("provides typed accessors for PCB vias", () => {
-  const via = EasyEdaShape.parse("VIA~432~215~3.2~GND~0.8~gge5")
+test("parses, mutates, and serializes PCB vias", () => {
+  const source = "VIA~432~215~3.2~GND~0.8~gge5"
+  const via = EasyEdaShape.parse(source)
+
   expect(via).toBeInstanceOf(EasyEdaVia)
   if (!(via instanceof EasyEdaVia)) throw new Error("Expected via")
 
+  // Confirm the original values were parsed correctly.
   expect(via.x).toBe(432)
   expect(via.y).toBe(215)
   expect(via.diameter).toBe(3.2)
   expect(via.net).toBe("GND")
   expect(via.holeRadius).toBe(0.8)
   expect(via.id).toBe("gge5")
+
+  // Change all editable properties.
+  via.x = 500
+  via.y = 250
+  via.diameter = 4
+  via.net = "VCC"
+  via.holeRadius = 1
+
+  // Confirm the correct fields were changed.
+  const serialized = via.getString()
+
+  expect(serialized).toBe("VIA~500~250~4~VCC~1~gge5")
+
+  // Parse the generated record again.
+  const reparsed = EasyEdaShape.parse(serialized)
+
+  expect(reparsed).toBeInstanceOf(EasyEdaVia)
+  if (!(reparsed instanceof EasyEdaVia)) {
+    throw new Error("Expected reparsed via")
+  }
+
+  // Confirm all changes survived serialization and reparsing.
+  expect(reparsed.x).toBe(500)
+  expect(reparsed.y).toBe(250)
+  expect(reparsed.diameter).toBe(4)
+  expect(reparsed.net).toBe("VCC")
+  expect(reparsed.holeRadius).toBe(1)
+
+  // The read-only ID must remain unchanged.
+  expect(reparsed.id).toBe("gge5")
 })
 
 test("provides typed accessors for PCB text", () => {
