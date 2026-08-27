@@ -112,7 +112,8 @@ test("parses, mutates, and serializes PCB vias", () => {
   expect(reparsed.net).toBe("VCC")
   expect(reparsed.holeRadius).toBe(1)
 
-  // The read-only ID must remain unchanged.
+    // The ID survives serialization and reparsing.
+expect(reparsed.id).toBe("gge5")
   expect(reparsed.id).toBe("gge5")
 })
 
