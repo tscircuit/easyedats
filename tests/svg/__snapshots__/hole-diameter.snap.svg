@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="35 35 30 30" role="img" aria-label="EasyEDA pcb" class="easyeda-document easyeda-pcb" data-renderer="easyedats">
+<title>EasyEDA pcb</title>
+<rect class="easyeda-background" x="35" y="35" width="30" height="30" fill="#000000"/>
+<g class="easyeda-shapes" stroke-linecap="round" stroke-linejoin="round">
+<circle data-easyeda-shape="HOLE" data-easyeda-id="gge-hole" cx="50" cy="50" r="4" fill="#111111" stroke="#d0d0d0" stroke-width="0.5"/>
+</g>
+</svg>
