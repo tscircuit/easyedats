@@ -52,6 +52,14 @@ export class EasyEdaPcbRectangle extends EasyEdaShape {
     this.setField(4, value)
   }
 
+  get strokeWidth(): number | undefined {
+    return this.getNumberField(7)
+  }
+
+  set strokeWidth(value: number | undefined) {
+    this.setField(7, value)
+  }
+
   get id(): string | undefined {
     return shapeId(this)
   }
