@@ -5,6 +5,7 @@ import {
 } from "../document"
 import type { EasyEdaPoint } from "../entities/field-helpers"
 import { EasyEdaLibrary } from "../entities/library"
+import { EasyEdaPcbRectangle } from "../entities/pcb-rectangle"
 import type { EasyEdaShape } from "../entities/shape"
 import { EasyEdaSvgNode, type EasyEdaSvgNodeData } from "../entities/svg-node"
 
@@ -744,11 +745,14 @@ function renderPcbShape(shape: EasyEdaShape, context: RenderContext): string[] {
   }
 
   if (shape.token === "RECT") {
-    const x = number(fields[0])
-    const y = number(fields[1])
-    const width = number(fields[2])
-    const height = number(fields[3])
-    const layerId = number(fields[7])
+    const rect = shape instanceof EasyEdaPcbRectangle ? shape : undefined
+    const x = rect?.x ?? number(fields[0])
+    const y = rect?.y ?? number(fields[1])
+    const width = rect?.width ?? number(fields[2])
+    const height = rect?.height ?? number(fields[3])
+    // EasyEDA PCB RECT: x~y~width~height~layer~id~locked~lineWidth
+    const layerId = rect?.layerId ?? number(fields[4])
+    const strokeWidth = rect?.strokeWidth ?? number(fields[7]) ?? 1
     if (
       x === undefined ||
       y === undefined ||
@@ -757,9 +761,8 @@ function renderPcbShape(shape: EasyEdaShape, context: RenderContext): string[] {
       !isLayerVisible(context, layerId)
     )
       return []
-    const rotation = number(fields[6]) ?? 0
     return [
-      `<rect ${attributes} data-layer="${layerId ?? ""}" x="${formatNumber(x)}" y="${formatNumber(y)}" width="${formatNumber(width)}" height="${formatNumber(height)}" fill="${escapeXml(fill(fields[8]))}" stroke="${escapeXml(layerColor(context, layerId))}" stroke-width="${formatNumber(number(fields[4]) ?? 1)}"${rotation === 0 ? "" : ` transform="rotate(${formatNumber(rotation)} ${formatNumber(x)} ${formatNumber(y)})"`}/>`,
+      `<rect ${attributes} data-layer="${layerId ?? ""}" x="${formatNumber(x)}" y="${formatNumber(y)}" width="${formatNumber(width)}" height="${formatNumber(height)}" fill="${escapeXml(fill(fields[8]))}" stroke="${escapeXml(layerColor(context, layerId))}" stroke-width="${formatNumber(strokeWidth)}"/>`,
     ]
   }
 
