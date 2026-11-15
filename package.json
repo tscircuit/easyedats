@@ -23,7 +23,7 @@
     "lint": "biome check ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.6",
+    "@biomejs/biome": "1.9.4",
     "@types/bun": "latest",
     "bun-match-svg": "^0.0.15",
     "sharp": "^0.35.3",
