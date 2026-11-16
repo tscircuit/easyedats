@@ -38,7 +38,9 @@ function serializeEntries(
     }
   }
   const source = segments.join("`")
-  return trailingDelimiter ? `${source}\`` : source
+  const needsTrailingDelimiter =
+    trailingDelimiter || entries[entries.length - 1]?.value === ""
+  return needsTrailingDelimiter ? `${source}\`` : source
 }
 
 function assertAttributePart(kind: "key" | "value", value: string): void {
